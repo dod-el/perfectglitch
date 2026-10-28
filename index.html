@@ -173,7 +173,7 @@
     searchStatus.textContent = q ? (shown ? 'Nájdené položky: ' + shown : 'Nenašli sa žiadne výsledky. Skús iný výraz.') : 'Začni písať názov filmu, seriálu, hry alebo článku.';
   }
   searchInput?.addEventListener('input', e => filterItems(e.target.value));
-  document.querySelector('.hero .btn')?.addEventListener('click', e => { e.preventDefault(); openArticle('Spider-Man: Brand New Day – Zbohom Shrek, vitaj Hulk', 'RECENZIA TÝŽDŇA', '7.7', 'Stalo sa neočakávané a Hulk dal konečne niekomu aj poriadne na búdku. Chudák Peťo Parker dostal síce zabrať ale koniec dobrý, všetko dobré.'); });
+  document.querySelector('.hero .btn')?.addEventListener('click', e => { e.preventDefault(); openArticle('Spider-Man: Brand New Day – Zbohom Shrek, vitaj Hulk', 'RECENZIA TÝŽDŇA', '8.2', 'Stalo sa neočakávané a Hulk dal konečne niekomu aj poriadne na búdku. Chudák Peťo Parker dostal síce zabrať ale koniec dobrý, všetko dobré.'); });
   document.querySelectorAll('.newsletter form').forEach(form => form.addEventListener('submit', e => { e.preventDefault(); document.getElementById('newsletterMsg').textContent = 'Ďakujeme za záujem! Odber zatiaľ nie je napojený na e-mailovú službu.'; }));
 })();
 </script>
