@@ -2,7 +2,7 @@
   {
     "title": "Clayface",
     "type": "film",
-    "rating": ?,
+    "rating": 5.0,
     "date": "2026-10-12",
     "summary": "Emócie, akčné scény a jeden veľmi veľký fúz.",
     "content": "Toto je iba ukážková recenzia hry. Nahraď text svojím vlastným hodnotením.",
@@ -11,7 +11,7 @@
   {
     "title": "Street Fighter",
     "type": "film",
-    "rating": 8.0,
+    "rating": 5.0,
     "date": "2026-10-05",
     "summary": "Skvelý výkon, temná atmosféra, nie však pre každého.",
     "content": "Toto je iba ukážková recenzia. Nahraď text svojím vlastným hodnotením.",
