@@ -1,0 +1,27 @@
+[
+  {
+    "title": "5 filmov, pri ktorých vypneš mozog (UKÁŽKA)",
+    "category": "film",
+    "date": "2026-10-28",
+    "summary": "Ukážkový rebríček na otestovanie stránky. Položky si nahraď vlastnými.",
+    "intro": "Toto je len ukážka, ako budú vyzerať tvoje rebríčky. Názvy, komentáre aj obrázky môžeš ľubovoľne zmeniť.",
+    "image": "",
+    "items": [
+      {
+        "title": "Prvý film – doplň názov",
+        "comment": "Sem napíš svoj humorný komentár k prvému miestu.",
+        "image": ""
+      },
+      {
+        "title": "Druhý film – doplň názov",
+        "comment": "Sem napíš komentár k druhému miestu.",
+        "image": ""
+      },
+      {
+        "title": "Tretí film – doplň názov",
+        "comment": "Sem napíš komentár k tretiemu miestu.",
+        "image": ""
+      }
+    ]
+  }
+]
