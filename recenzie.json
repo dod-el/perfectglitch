@@ -1,6 +1,6 @@
 [
   {
-    "title": "Clayface",
+    "title": "Clayface 2026",
     "type": "film",
     "rating": 5.0,
     "date": "2026-10-12",
@@ -9,7 +9,7 @@
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=700&q=80"
   },
   {
-    "title": "Street Fighter",
+    "title": "Street Fighter 2026",
     "type": "film",
     "rating": 5.0,
     "date": "2026-10-05",
@@ -18,7 +18,7 @@
     "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=700&q=80"
   },
   {
-    "title": "Spider-Man: Brand New Day alebo prečo ísť radšej na terapiu",
+    "title": "Spider-Man: Brand New Day 2025",
     "type": "film",
     "rating": 8.0,
     "date": "2026-10-18",
@@ -27,12 +27,12 @@
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/Zz1kZjFkOTdmMjhhYTUxMWYxYjM5ZDQ2N2M4ODUzNGI0NA==.webp?raw=true"
   },
   {
-    "title": "Superman",
+    "title": "Superman 2025",
     "type": "film",
-    "rating": 8.0,
+    "rating": 8.5,
     "date": "2026-10-05",
-    "summary": "Skvelý výkon, temná atmosféra, nie však pre každého.",
-    "content": "Toto je iba ukážková recenzia. Nahraď text svojím vlastným hodnotením.",
-    "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=700&q=80"   
+    "summary": "Srandičky bokom - konečne hopeful Superman ako má byť!.",
+    "content": "Clark Kent sa snaží maskovať za lúzra v okuliaroch, kým ho plešatý miliardár Lex Luthor nezatiahne do vojny v Boravii, kde dostane takú strašnú nakladačku od Ultramana, že uteká na Antarktídu zapnúť si solárium.\n\nV Narnii ho dorazí odkaz od mŕtvych rodičov, ktorí mu kvôli pokazenému vesmírnemu záznamníku až teraz prezradia, že jeho skutočnou misiou je zotročiť celé ľudstvo a mať háremy.\n\ným Clark rieši túto existenčnú krízu, Luthor mu zákerne ukradne lietajúceho psa Krypta (nie, žiadny bitcoin mu nevzali), čo hrdinu zlomí natoľko, že sa dobrovoľne vzdá armáde, len aby ho zavreli do rovnakej basy k jeho psovi.\n\nZ tejto sci-fi basy utečie vďaka chodiacej periodickej tabuľke Metamorphovi, s partiou Justice Gang rozmláti Ultramana na blato a dokáže, že nie je vesmírny diktátor, ale len naivný skautík v príliš tesných modrých legínach.",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/superman-2025.webp?raw=true"   
   }
 ]
