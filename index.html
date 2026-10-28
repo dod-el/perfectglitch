@@ -39,7 +39,7 @@
 <div class="wrap layout" id="domov">
   <main class="maincol">
     <section class="hero" aria-label="Odporúčaná recenzia">
-      <div class="hero-content"><span class="tag">Recenzia týždňa</span><h1>Spider-Man: Brand New Day<span>Zbohom Shrek, vitaj Hulk</span></h1><p>Stalo sa neočakávané a Hulk dal konečne niekomu aj poriadne na búdku. Chudák Peťo Parker dostal síce zabrať ale koniec dobrý, všetko dobré.</p><a class="btn" href="clanky.html">Čítať recenziu <span>→</span></a></div><div class="hero-dots"><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="hero-content"><span class="tag">Recenzia týždňa</span><h1>Spider-Man: Brand New Day<span>Zbohom Shrek, vitaj Hulk</span></h1><p>Stalo sa neočakávané a Hulk dal konečne niekomu aj poriadne na búdku. Chudák Peter Parker dostal síce zabrať ale koniec dobrý, všetko dobré.</p><a class="btn" href="clanky.html">Čítať recenziu <span>→</span></a></div><div class="hero-dots"><span></span><span></span><span></span><span></span><span></span></div>
     </section>
     <section class="section" id="filmy">
       <div class="section-head"><h2 class="section-title"><span class="emoji">🍿</span> Najnovšie recenzie</h2><a class="view-all" href="clanky.html">Zobraziť všetko →</a></div>
@@ -173,7 +173,7 @@
     searchStatus.textContent = q ? (shown ? 'Nájdené položky: ' + shown : 'Nenašli sa žiadne výsledky. Skús iný výraz.') : 'Začni písať názov filmu, seriálu, hry alebo článku.';
   }
   searchInput?.addEventListener('input', e => filterItems(e.target.value));
-  document.querySelector('.hero .btn')?.addEventListener('click', e => { e.preventDefault(); openArticle('Spider-Man: Brand New Day – Zbohom Shrek, vitaj Hulk', 'RECENZIA TÝŽDŇA', '8.2', 'Stalo sa neočakávané a Hulk dal konečne niekomu aj poriadne na búdku. Chudák Peťo Parker dostal síce zabrať ale koniec dobrý, všetko dobré.'); });
+  document.querySelector('.hero .btn')?.addEventListener('click', e => { e.preventDefault(); openArticle('Spider-Man: Brand New Day – Zbohom Shrek, vitaj Hulk', 'RECENZIA TÝŽDŇA', '8.0', 'Spider-Man, ktorý po kúzle zabudnutia žije ako úplný bezdomovec, dostane nakladačku od ovládaného Hulka (ktorý si ho ako jediný paradoxne pamätá, lebo je na kúzla príliš hlúpy), zachráni svet dojemnou spomienkou na tetu May a vzápätí ho omylom prestrelí vlastný spojenec Punisher.'); });
   document.querySelectorAll('.newsletter form').forEach(form => form.addEventListener('submit', e => { e.preventDefault(); document.getElementById('newsletterMsg').textContent = 'Ďakujeme za záujem! Odber zatiaľ nie je napojený na e-mailovú službu.'; }));
 })();
 </script>
