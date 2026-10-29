@@ -388,7 +388,7 @@ document.getElementById('searchToggle')?.addEventListener('click', () => {
     },220);
   }
   function stopHeroTimer(){if(heroTimer){clearInterval(heroTimer);heroTimer=null;}}
-  function startHeroTimer(){stopHeroTimer();if(heroSlides.length>1)heroTimer=setInterval(()=>showHeroSlide(activeHeroSlide+1),6000);}
+  function startHeroTimer(){stopHeroTimer();if(heroSlides.length>1)heroTimer=setInterval(()=>showHeroSlide(activeHeroSlide+1),10000);}
   function restartHeroTimer(){startHeroTimer();}
   hero.addEventListener('mouseenter',stopHeroTimer);
   hero.addEventListener('mouseleave',startHeroTimer);
