@@ -111,7 +111,7 @@
     <section class="sidebox"><h2 class="side-title">Seriály, ktoré musíš vidieť <span>📺</span></h2><ol class="rank-list" id="topSerialy"></ol></section>
   </aside>
 </div>
-<div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle">Článok</h2><div class="modal-meta" id="modalMeta"></div><p id="modalIntro" class="modal-review-content"></p><div class="modal-joke" id="modalJoke"></div><section class="review-verdict" id="reviewVerdict" hidden><h3>🎯 Verdikt Perfect Glitch</h3><div class="verdict-score" id="verdictScore"></div><p class="verdict-text" id="verdictText"></p><div class="verdict-columns" id="verdictColumns" hidden><div><b class="rating-high">✓ Čo sa podarilo</b><p id="verdictPros"></p></div><div><b class="rating-low">✕ Čo sa nepodarilo</b><p id="verdictCons"></p></div></div></section><section class="related-reviews" id="relatedReviews" hidden><h3>🍿 Podobné recenzie</h3><div class="related-list" id="relatedList"></div></section><div class="review-actions"><button type="button" id="copyReviewLink">🔗 Kopírovať odkaz na recenziu</button></div><p class="modal-disclaimer">Recenzia predstavuje subjektívny názor autora.</p></article></div>
+<div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle">Článok</h2><div class="modal-meta" id="modalMeta"></div><p id="modalIntro" class="modal-review-content"></p><div class="modal-joke" id="modalJoke"></div><section class="related-reviews" id="relatedReviews" hidden><h3>🍿 Podobné recenzie</h3><div class="related-list" id="relatedList"></div></section><div class="review-actions"><button type="button" id="copyReviewLink">🔗 Kopírovať odkaz na recenziu</button></div><p class="modal-disclaimer">Recenzia predstavuje subjektívny názor autora.</p></article></div>
 <footer class="footer" id="clanky"><div class="wrap"><div class="footer-inner"><a class="brand" href="#domov"><span class="brand-icon">🍿</span><div><div class="brand-name">Perfect Glitch</div><div class="brand-sub">FILMY · SERIÁLY · HRY · HUMOR</div></div></a><nav class="footer-links"><a href="index.html">Domov</a><a href="filmy.html">Filmy</a><a href="serialy.html">Seriály</a><a href="hry.html">Hry</a><a href="rebricky.html">Rebríčky</a><a href="clanky.html">Články</a><a href="o-mne.html">O mne</a></nav><div class="social" aria-label="Sociálne siete"><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a></div></div><div class="copyright">© 2026 Perfect Glitch · Filmy, hry, humor. To je život. <span style="float:right">Ukážkové recenzie a rebríčky zatiaľ slúžia na prezentáciu dizajnu.</span></div></div></footer>
 
 <script>
@@ -168,22 +168,11 @@ const REBRICKY_DATA = {
   const searchInput = document.getElementById('siteSearch');
   const searchStatus = document.getElementById('searchStatus');
   let lastFocus = null;
-   const verdictBox = document.getElementById('reviewVerdict');
    const relatedBox = document.getElementById('relatedReviews');
    const scoreClass = value => { const n = Number(String(value ?? '').replace(',', '.').replace(/[^0-9.]/g,'')); return !Number.isFinite(n) || !String(value ?? '').trim() ? '' : n >= 8 ? 'rating-high' : n >= 5 ? 'rating-mid' : 'rating-low'; };
    const ratingBadge = r => r.rating == null || String(r.rating).trim() === '' ? '' : `<span class="score-badge ${scoreClass(r.rating)}">★ ${escapeHtml(r.rating)}/10</span>`;
    const normalizeKind = r => String(r.type || '').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
    function fillReviewExtras(r) {
-     verdictBox.hidden = false;
-     const verdict = r.verdict || r.summary || 'Prečítaj si recenziu a urob si vlastný názor.';
-     document.getElementById('verdictScore').textContent = r.rating != null ? `${r.rating}/10` : 'Bez hodnotenia';
-     document.getElementById('verdictScore').className = 'verdict-score ' + scoreClass(r.rating);
-     document.getElementById('verdictText').textContent = verdict;
-     const pros = Array.isArray(r.pros) ? r.pros.join(' • ') : String(r.pros || '');
-     const cons = Array.isArray(r.cons) ? r.cons.join(' • ') : String(r.cons || '');
-     document.getElementById('verdictColumns').hidden = !pros && !cons;
-     document.getElementById('verdictPros').textContent = pros || 'Neuvedené';
-     document.getElementById('verdictCons').textContent = cons || 'Neuvedené';
      const similar = allReviews.filter(x => x !== r && String(x.id || x.title) !== String(r.id || r.title) && normalizeKind(x) === normalizeKind(r)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,3);
      relatedBox.hidden = similar.length === 0;
      const list = document.getElementById('relatedList'); list.replaceChildren();
@@ -200,7 +189,7 @@ const REBRICKY_DATA = {
     metaEl.textContent = (type || 'ČLÁNOK') + (rating ? ' · HODNOTENIE ' + rating : '');
     introEl.textContent = intro || 'Text recenzie zatiaľ nie je doplnený.';
     jokeEl.textContent = 'Hodnotenie autora: ' + (rating || 'bez hodnotenia') + '/10';
-    verdictBox.hidden = true; relatedBox.hidden = true; document.getElementById('copyReviewLink').hidden = true;
+    relatedBox.hidden = true; document.getElementById('copyReviewLink').hidden = true;
     modal.hidden = false;
     document.body.style.overflow = 'hidden';
     modal.querySelector('.modal-close').focus();
