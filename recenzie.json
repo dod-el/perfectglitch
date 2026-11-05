@@ -11,16 +11,7 @@
     "rankings": [
       "hry"
     ],
-    "rating": 8.2,
-    "pros": [
-      "nádherný vizuál",
-      "náročný kombat",
-      "tempo hry"
-    ],
-    "cons": [
-      "slabší vývoj postavy",
-      "predvídateľný dizajn sveta"
-    ]
+    "rating": 8.2
   },
   {
     "id": "horizon-forbidden-west-39850",
@@ -34,16 +25,7 @@
     "rankings": [
       "TOP postapokalyptické hry"
     ],
-    "rating": 7.8,
-    "pros": [
-      "vizuálny masaker",
-      "vylepšený pohyb po svete",
-      "lepšia mechanika súbojov"
-    ],
-    "cons": [
-      "finále a záporáci",
-      "preplnená mapa"
-    ]
+    "rating": 7.8
   },
   {
     "id": "horizon-zero-dawn-02786",
@@ -57,16 +39,7 @@
     "rankings": [
       "TOP postapokalyptické hry"
     ],
-    "rating": 8.1,
-    "pros": [
-      "unikátny svet a lore",
-      "dizajn robotov"
-    ],
-    "cons": [
-      "mŕtve rozhovory a dialógy",
-      "fyzika vlasov je na celej obrazovke",
-      "nezáživné vedľajšie úlohy"
-    ]
+    "rating": 8.1
   },
   {
     "id": "ghost-of-tsushima-64938",
@@ -81,15 +54,7 @@
       "hry",
       "TOP RPG hry"
     ],
-    "rating": 9.2,
-    "pros": [
-      "nádherný otvorený svet",
-      "dobre vystihnutá éra samurajov"
-    ],
-    "cons": [
-      "repetitívne čistenie mongolských táborov",
-      "obmedzené lezenie po skalách"
-    ]
+    "rating": 9.2
   },
   {
     "id": "supernatural-17903",
@@ -103,17 +68,7 @@
     "rankings": [
       "serialy"
     ],
-    "rating": 7.8,
-    "pros": [
-      "bratská chémia",
-      "hudobný podmaz",
-      "skvelé paródie na seba"
-    ],
-    "cons": [
-      "naťahovanie deja",
-      "slabé finále",
-      "božská inflácia"
-    ]
+    "rating": 7.8
   },
   {
     "id": "god-of-war-ragnarok-21179",
@@ -128,16 +83,7 @@
       "hry",
       "TOP RPG hry"
     ],
-    "rating": 9.0,
-    "pros": [
-      "koniec recyklácie bossov",
-      "návšteva všetkých 9 svetov",
-      "DLC Valhalla zadarmo"
-    ],
-    "cons": [
-      "ľahké hádanky",
-      "preplnený inventár"
-    ]
+    "rating": 9.0
   },
   {
     "id": "god-of-war-27771",
@@ -152,17 +98,7 @@
       "hry",
       "TOP RPG hry"
     ],
-    "rating": 9.2,
-    "pros": [
-      "zmena Kratosovej osobnosti",
-      "kamera na jeden záber",
-      "návykový hod sekerou"
-    ],
-    "cons": [
-      "recyklovaní nepriatelia",
-      "rovnaké animácie",
-      "príliš rýchly koniec s Baldurom"
-    ]
+    "rating": 9.2
   },
   {
     "id": "the-last-of-us-part-2-42786",
@@ -177,18 +113,7 @@
       "hry",
       "TOP postapokalyptické hry"
     ],
-    "rating": 9.3,
-    "verdict": "The Last of Us Part II vzala úspešný recept jednotky, obliala ho litrami hnevu a poslala ťa na výlet do Seattle, kde prší rovnako intenzívne ako slzy frustrovaných hráčov. V skratke: ak bola jednotka o hľadaní lásky na konci sveta, dvojka je o tom, ako ťa tá láska totálne zruinuje a prinúti ťa urobiť veci, po ktorých budeš potrebovať sprchu aj terapiu.",
-    "pros": [
-      "dizajn levelov",
-      "návyková hrateľnosť",
-      "grafika a detaily okolia"
-    ],
-    "cons": [
-      "príbehové rozhodnutia",
-      "naťahovanie hry",
-      "depresia"
-    ]
+    "rating": 9.3
   },
   {
     "id": "the-last-of-us-part-1-41626",
@@ -203,17 +128,7 @@
       "hry",
       "TOP postapokalyptické hry"
     ],
-    "rating": 9.3,
-    "verdict": "Prechádzka zničenou Amerikou, kde namiesto turistických atrakcií obdivuješ vraždiace huby a zistíš, že najväčším nebezpečenstvom pre ľudstvo nie je ekologická katastrofa, ale tvoj vlastný morálny kompas.",
-    "pros": [
-      "vizuálny orgazmus",
-      "herecké výkony",
-      "umelá inteligencia",
-      "deštrukcia prostredia a fyzika"
-    ],
-    "cons": [
-      "zbohom multiplayer"
-    ]
+    "rating": 9.3
   },
   {
     "id": "uncharted-4-51710",
