@@ -107,6 +107,7 @@
     <section class="sidebox"><h2 class="side-title">Filmy, ktoré musíš vidieť <span>👑</span></h2><ol class="rank-list" id="topFilmy"></ol><button class="rank-more" type="button" data-rank-toggle="topFilmy" aria-expanded="false">Pozrieť všetky →</button></section>
     <section class="sidebox"><h2 class="side-title">Hry, ktoré stoja za čas <span>🎮</span></h2><ol class="rank-list game-list" id="topHry"></ol><button class="rank-more" type="button" data-rank-toggle="topHry" aria-expanded="false">Pozrieť všetky →</button><p class="scribble">Nie každá hra je majstrovské dielo.<br>Nie každá recenzia stojí za to. ☺</p></section>
     <section class="sidebox"><h2 class="side-title">Seriály, ktoré musíš vidieť <span>📺</span></h2><ol class="rank-list" id="topSerialy"></ol><button class="rank-more" type="button" data-rank-toggle="topSerialy" aria-expanded="false">Pozrieť všetky →</button></section>
+    <section class="sidebox"><h2 class="side-title">Najväčšie sklamania <span>💀</span></h2><ol class="rank-list" id="topSklamania"></ol><button class="rank-more" type="button" data-rank-toggle="topSklamania" aria-expanded="false">Pozrieť všetky →</button></section>
   </aside>
 </div>
 <div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle">Článok</h2><div class="modal-meta" id="modalMeta"></div><p id="modalIntro" class="modal-review-content"></p><div class="modal-joke" id="modalJoke"></div><section class="related-reviews" id="relatedReviews" hidden><h3>🍿 Podobné recenzie</h3><div class="related-list" id="relatedList"></div></section><div class="review-actions"><button type="button" id="readFullReview" hidden>Prečítať celú recenziu →</button><button type="button" id="copyReviewLink">🔗 Kopírovať odkaz na recenziu</button></div><p class="modal-disclaimer">Recenzia predstavuje subjektívny názor autora.</p></article></div>
@@ -251,7 +252,7 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
      if (!Array.isArray(reviews) || !reviews.length) { reviewsList.innerHTML='<p class="no-results">Zatiaľ tu nie sú žiadne recenzie.</p>';return; }
      allReviews = [...reviews];
      sortedReviews = [...reviews].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
-     syncRankingsWithReviews(); syncSelectedSidebarRankings();
+     syncRankingsWithReviews(); syncSelectedSidebarRankings(); syncWorstRatedReviews();
      applyCategory(); renderPopularReviews();
      if (typeof syncFeaturedReviews === 'function') syncFeaturedReviews(allReviews);
      const requested = new URLSearchParams(location.search).get('recenzia');
@@ -294,6 +295,39 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
         updateRankVisibility(id);
       }
     }
+    // Päť najhoršie hodnotených skutočných recenzií naprieč filmami, seriálmi a hrami.
+    function syncWorstRatedReviews(){
+      const list=document.getElementById('topSklamania');
+      if(!list)return;
+      const validType=r=>{
+        const t=String(r.type||'').toLocaleLowerCase('sk').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+        return ['film','serial','hra','game'].includes(t);
+      };
+      const score=r=>{
+        const raw=String(r.rating??'').trim().replace(',', '.');
+        if(!/^\d+(?:\.\d+)?$/.test(raw))return null;
+        const n=Number(raw);
+        return Number.isFinite(n)&&n>=0&&n<=10?n:null;
+      };
+      const items=allReviews.filter(r=>validType(r)&&typeof r.content==='string'&&r.content.trim()&&score(r)!==null)
+        .sort((a,b)=>score(a)-score(b)||String(b.date||'').localeCompare(String(a.date||'')));
+      list.replaceChildren();
+      items.forEach((item,i)=>{
+        const li=document.createElement('li');li.tabIndex=0;li.setAttribute('role','button');
+        li.setAttribute('aria-label','Otvoriť recenziu: '+item.title);
+        li.dataset.description=item.summary||'';
+        li.dataset.search=(item.title+' '+li.dataset.description).toLocaleLowerCase('sk');
+        const num=document.createElement('span');num.className='num';num.textContent=(i+1)+'.';
+        const img=document.createElement('img');img.className='thumb';img.src=item.image||'';img.alt='Obrázok: '+item.title;img.loading='lazy';
+        const copy=document.createElement('div');copy.className='rank-copy';
+        const name=document.createElement('b');name.textContent=item.title;
+        const desc=document.createElement('small');desc.textContent=item.summary||'';
+        copy.append(name,desc);
+        const rating=document.createElement('span');rating.className='rating';rating.textContent=item.rating;
+        li.append(num,img,copy,rating);list.append(li);
+      });
+      updateRankVisibility('topSklamania');
+    }
     function updateRankVisibility(id){
       const list=document.getElementById(id);
       const btn=document.querySelector('[data-rank-toggle="'+id+'"]');
@@ -307,7 +341,7 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
       btn.setAttribute('aria-expanded',String(btn.getAttribute('aria-expanded')!=='true'));
       updateRankVisibility(btn.dataset.rankToggle);
     }));
-    ['topFilmy','topHry','topSerialy'].forEach(updateRankVisibility);
+    ['topFilmy','topHry','topSerialy','topSklamania'].forEach(updateRankVisibility);
 
 function syncRankingsWithReviews() {
    document.querySelectorAll('.mini-card').forEach(card => {
@@ -341,7 +375,7 @@ function syncRankingsWithReviews() {
      const openRank = li => {
        const title = li.querySelector('.rank-copy b')?.textContent.trim() || 'Položka rebríčka';
        const rating = li.querySelector('.rating')?.textContent.trim() || '';
-       const type = list.id === 'topHry' ? 'HRA' : list.id === 'topSerialy' ? 'SERIÁL' : 'FILM';
+       const type = list.id === 'topHry' ? 'HRA' : list.id === 'topSerialy' ? 'SERIÁL' : list.id === 'topSklamania' ? 'RECENZIA' : 'FILM';
         const review = findRankReview(title);
         openRankPreview(review?.title || title, type, review?.rating || rating, review?.summary || 'K tejto položke zatiaľ nie je dostupná recenzia.', review);
      };
