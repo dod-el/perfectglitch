@@ -1,5 +1,77 @@
 [
   {
+    "id": "the-witcher-35393",
+    "title": "The Witcher",
+    "type": "seriál",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/witcher.webp?raw=true",
+    "summary": "Drahá fantasy telenovela od Netflixu, ktorá dokázala vziať milovanú poľskú klasiku a s obrovským rozpočtom ju premeniť na lacno vyzerajúci bordel, z ktorého ušiel aj vlastný hlavný hrdina.",
+    "content": "Scenáristi zrejme knižnú predlohu použili len ako podložku pod kývajúci sa stôl, pretože namiesto epického príbehu o love príšer dostaneš nekonečné politické schôdze nudných čarodejníc v róbach z výpredaja.\n\nHenry Cavill tri série niesol celú túto potápajúcu sa loď na vlastnom chrbte, len aby si nakoniec povedal, že radšej bude doma lepiť plastové figúrky Warhammeru, než by mal ďalej trpieť tento scenáristický masaker.\n\nVýmena hlavného hrdinu za Liama Hemswortha vo štvrtej sérii pôsobí presne tak, ako keď si z AliExpressu objednáš luxusného Geralta z Rivie a domov ti príde jeho mladší, mierne zmätený bratranec v lacnej parochni.\n\nCelý svet Kontinentu sa scvrkol na desať rovnakých lesov v Maďarsku a Anglicku, kde sa postavy náhodne stretávajú každých päť minút, akoby celý svet mal rozlohu priemerného okresného mesta.\n\nJediným svetlým bodom tohto utrpenia zostáva bard Marigold, ktorý aspoň občas zaspieva chytľavú pesničku, aby prehlusil bolestivé sténanie fanúšikov kníh a hier.",
+    "featured": false,
+    "rankings": [],
+    "rating": 6.7
+  },
+  {
+    "id": "tropic-thunder-2008-22198",
+    "title": "Tropic Thunder 2008",
+    "type": "film",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/tropic%20thunder.webp?raw=true",
+    "summary": "Absolútna svätyňa nekorektného humoru z čias, keď si ešte Hollywood nechal narásť gule, dovolil si uraziť každú existujúcu menšinu, a nebál sa že ho za jeden vtip okamžite zrušia na Twitteri.",
+    "content": "Partia rozmaznaných hollywoodskych idiotov s egom väčším ako ich bankové kontá vyrazí do džungle nakrúcať vojnový veľkofilm, no sú takí neschopní, že si ani nevšimnú, keď začnú strieľať slepými nábojmi po skutočných drogových karteloch.\n\nRobert Downey Jr. tu ako austrálsky držiteľ piatich Oscarov podstúpi plastickú operáciu pigmentu, aby mohol hrať černošského seržanta, a robí to s takým fanatizmom, že by dnes za túto rolu dostal doživotný zákaz vstupu do civilizovaného sveta.\n\nBen Stiller stvárňuje vyhasnutú akčnú hviezdu zúfalo túžiacu po rešpekte, a tak sa v rámci „metódy“ rozhodne zahrať mentálne postihnutého sedliaka \"Simple Jack\", čím divákom naservíruje jednu z najtrápnejších a najbrutálnejších fiktívnych ukážok v dejinách kinematografie.\n\nJack Black hrá komika závislého od heroínu, ktorý bez svojej dennej dávky prdí, zvracia a je ochotný vyfajčiť aj kmeň stromu, len aby ho niekto priviazal k palme a nechal ho vytriezvieť.\n\nCelému tomuto cirkusu šéfuje tučný, plešatý a chlpatý Tom Cruise ako psychopatický producent Les Grossman, ktorý cez telefón sľubuje teroristom masaker a tancuje hip-hop lepšie než polovica dnešnej hudobnej scény.",
+    "featured": false,
+    "rankings": [
+      "filmy",
+      "Filmy na pobavenie"
+    ],
+    "rating": 9.2,
+    "editorPick": true
+  },
+  {
+    "id": "superman-and-lois-64521",
+    "title": "Superman and Lois",
+    "type": "seriál",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/superman%20a%20lois.webp?raw=true",
+    "summary": "Superhrdinská telenovela stanice CW, kde najmocnejší chlap na planéte vymení zachraňovanie galaxie za hypotéku, kosenie trávnika a nekonečné rodinné drámy v zapadákove menom Smallville.",
+    "content": "Výborný Superman, skvelá rodinná dynamika, kvalitné herecké výkony a prekvapivo dospelý príbeh. Tyler Hoechlin je v tejto úlohe fantastický a seriál dokazuje, že na dobrého Supermana nepotrebuješ rozpočet na stavbu troch jadrových elektrární.\n\nNajmocnejší mimozemšťan vo vesmíre zisťuje, že zastaviť padajúci asteroid je absolútna brnkačka v porovnaní s tým, keď sa tvoj pubertálny syn rozhodne trucovať a vykašle sa na domáce úlohy.\n\nJeden z ich synov je ufňukaný emo chudák, ktorý má záchvaty úzkosti aj z vlastného tieňa, a ten druhý je klasický stredoškolský debilko, ktorému trvá tri série, kým pochopí, že nie je pupkom sveta.\n\nSeriál má štyri série a končí sa v roku 2024. Postupne servíruje poriadne súboje, silných záporákov, rodinné konflikty a niekoľko momentov, pri ktorých ti dôjde, že Superman nie je nezničiteľný vo všetkom. Záverečná séria pritvrdí, Doomsday robí bordel, Lex Luthor ide naplno a finále sa rozhodne, že tvoje slzné kanáliky potrebujú generálnu opravu. A nie, nebudeš sa cítiť ako po obyčajnom komiksovom seriáli. \n\nJeden z najlepších hraných Supermanov vôbec. Konečne seriál, v ktorom modré elasťáky nie sú najväčším problémom scenára.",
+    "featured": false,
+    "rankings": [
+      "TOP sci-fi seriály"
+    ],
+    "rating": 8.3
+  },
+  {
+    "id": "arcane-22445",
+    "title": "Arcane",
+    "type": "seriál",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/arcane-lol_orig.webp?raw=true",
+    "summary": "Dve sestry sa majú tak rady, že si z nudy navzájom vyhodia do vzduchu polovicu mesta, zatiaľ čo sa jedna mení na psychopatickú Barbie a druhá na lesbickú verziu Rockyho Balbou.",
+    "content": "Všetky dospelé postavy v tomto seriáli by mali dostať okamžitý zákaz približovania sa k deťom, pretože každý ich pokus o výchovu končí masovou vraždou alebo mentálnym zrútením.\n\nPiltover pije šampanské a vymýšľa magické hračky, zatiaľ čo spodina v Zaune fetuje fialový sliz, aby vôbec prežila do ďalšieho utorka.\n\nToto nie je obyčajná animácia. Každá scéna vyzerá ako obraz, ktorý niekto namaľoval počas troch dní bez spánku a s rozpočtom menšieho štátu. Pohyb, farby, výrazy postáv, súboje – všetko je kurevsky nádherné. A soundtrack? Ten ti vlezie do hlavy a odmieta odísť. Dokonca aj keď sa nič nedeje, máš pocit, že sleduješ umelecké dielo.\n\nJe to v podstate najdrahšia a najkrajšia reklama na počítačovú hru v histórii, po ktorej si tú hru aj tak nenainštaluješ, lebo by ti jej komunita okamžite vynadala do kokotov.",
+    "featured": false,
+    "rankings": [
+      "serialy",
+      "TOP animované seriály"
+    ],
+    "rating": 9.5
+  },
+  {
+    "id": "attack-on-titan-15502",
+    "title": "Attack on Titan",
+    "type": "seriál",
+    "date": "2026-11-12",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/aot.webp?raw=true",
+    "summary": "Nahí obri žerú ľudí, ľudia žerú vlastné ideály a ty žerieš nervy, pretože po každej epizóde potrebuješ ďalšiu. Absolútna anime špička. Ak si to ešte nevidel, prestaň čítať internetové pičoviny a choď si to pustiť.",
+    "content": "Ľudstvo žije za obrovskými múrmi, pretože vonku pobehujú nahí obri, ktorí majú jediný životný cieľ: zožrať človeka. Proste ťa chytí obrovský holý kokot a spraví z teba desiatu. A keď sa objaví Kolosálny Titan, zistíš, že tvoj bezpečnostný múr je asi taký spoľahlivý ako zámok na hajzli v krčme.\n\nEren začína ako nasratý pubertiak s veľkým snom: vyvraždiť všetkých Titanov. Postupne sa z neho stáva taký komplikovaný týpek, že aj vlastná rodina by si pred ním radšej zamkla dvere...teda keby žila. Jeho vývoj je fascinujúci. Zo „zabijem všetkých nepriateľov“ sa dostane k problémom, pri ktorých už nepomôže ani desať rokov terapie, tri antidepresíva a výpredaj v Hornbachu.\n\nLevi je dôkaz, že výška nie je všetko. Tento upratovač Titanov má viac charizmy v jednom pohľade než väčšina anime hrdinov v celom životopise. Všade lietajú hlavy, končatiny a vnútornosti, zatiaľ čo on vyzerá, akoby ho najviac nasralo, že niekto nechal špinavú podlahu. Keď sa Levi pustí do boja, aj samotný Titan začne rozmýšľať, či by nebolo lepšie ísť na invalidný dôchodok.\n\nTo, čo sa spočiatku tvári ako jednoduchý boj ľudí proti obrovským ľudožravým hovädám, sa postupne zmení na politický thriller, historickú tragédiu a filozofickú facku cez papuľu. Každá odpoveď vyvolá ďalších pätnásť otázok. Zrazu nevieš, kto je nepriateľ, kto je obeť a kto je len ďalší chudák, ktorému sa posral život. Seriál ti pravidelne vytrhne koberec spod nôh a ešte ti naň naserie.\n\nZáver je emocionálna demolácia. Priatelia proti priateľom, ideály proti realite, obrovské monštrá a rozhodnutia, pri ktorých by aj Hitler povedal: „Ty vole, trochu brzdi.“ Seriál sa nebojí ukázať, že nenávisť plodí ďalšiu nenávisť.",
+    "featured": false,
+    "rankings": [
+      "serialy",
+      "TOP anime seriály"
+    ],
+    "rating": 9.9
+  },
+  {
     "id": "invincible-08581",
     "title": "Invincible",
     "type": "seriál",
