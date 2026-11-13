@@ -103,7 +103,7 @@
     <section class="quote-banner" id="omne"><strong>Nie som kritik.<br>Som len veľmi úprimný divák a hráč.</strong><small>Ak ti moja recenzia ušetrí dve hodiny života, tak to má zmysel. ☺</small></section>
   </main>
   <aside class="sidebar" id="odporucania">
-    <!-- Rebríčky upravuj v jedinom bloku REBRICKY_DATA na konci súboru. -->
+    <!-- Rebríčky sa zobrazujú výhradne zo skutočných recenzií v recenzie.json. -->
     <section class="sidebox"><h2 class="side-title">Filmy, ktoré musíš vidieť <span>👑</span></h2><ol class="rank-list" id="topFilmy"></ol><button class="rank-more" type="button" data-rank-toggle="topFilmy" aria-expanded="false">Pozrieť všetky →</button></section>
     <section class="sidebox"><h2 class="side-title">Hry, ktoré stoja za čas <span>🎮</span></h2><ol class="rank-list game-list" id="topHry"></ol><button class="rank-more" type="button" data-rank-toggle="topHry" aria-expanded="false">Pozrieť všetky →</button><p class="scribble">Nie každá hra je majstrovské dielo.<br>Nie každá recenzia stojí za to. ☺</p></section>
     <section class="sidebox"><h2 class="side-title">Seriály, ktoré musíš vidieť <span>📺</span></h2><ol class="rank-list" id="topSerialy"></ol><button class="rank-more" type="button" data-rank-toggle="topSerialy" aria-expanded="false">Pozrieť všetky →</button></section>
@@ -112,47 +112,7 @@
 <div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle">Článok</h2><div class="modal-meta" id="modalMeta"></div><p id="modalIntro" class="modal-review-content"></p><div class="modal-joke" id="modalJoke"></div><section class="related-reviews" id="relatedReviews" hidden><h3>🍿 Podobné recenzie</h3><div class="related-list" id="relatedList"></div></section><div class="review-actions"><button type="button" id="readFullReview" hidden>Prečítať celú recenziu →</button><button type="button" id="copyReviewLink">🔗 Kopírovať odkaz na recenziu</button></div><p class="modal-disclaimer">Recenzia predstavuje subjektívny názor autora.</p></article></div>
 <footer class="footer" id="clanky"><div class="wrap"><div class="footer-inner"><a class="brand" href="#domov"><span class="brand-icon">🍿</span><div><div class="brand-name">Perfect Glitch</div><div class="brand-sub">FILMY · SERIÁLY · HRY · HUMOR</div></div></a><nav class="footer-links"><a href="index.html">Domov</a><a href="filmy.html">Filmy</a><a href="serialy.html">Seriály</a><a href="hry.html">Hry</a><a href="rebricky.html">Rebríčky</a><a href="clanky.html">Články</a><a href="o-mne.html">O mne</a></nav><div class="social" aria-label="Sociálne siete"><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a></div></div><div class="copyright">© 2026 Perfect Glitch · Filmy, hry, humor. To je život. <span style="float:right">Ukážkové recenzie a rebríčky zatiaľ slúžia na prezentáciu dizajnu.</span></div></div></footer>
 
-<script>
-/* ============================================================
-   JEDNODUCHÁ ÚPRAVA PRAVÝCH REBRÍČKOV
-   Upravuj iba položky medzi hranatými zátvorkami nižšie.
-   title = názov, image = URL obrázka, rating = hodnotenie,
-   description = krátky komentár (pri hrách voliteľný).
-   Poradie v zozname = poradie na stránke. Pridaj/odober položky.
-   Každá položka má tvar: { title: "...", image: "...", rating: "...", description: "..." },
-   ============================================================ */
-const REBRICKY_DATA = {
-  filmy: [
-    {title:"Interstellar", image:"https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=180&q=75", rating:"9.5", description:"Krásny film o tom, že aj vesmír má lepší plán ako ty."},
-    {title:"The Dark Knight", image:"https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=180&q=75", rating:"9.3", description:"Batman, ktorý ti dá viac emócií než tvoja ex."},
-    {title:"Pulp Fiction", image:"https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=180&q=75", rating:"9.1", description:"Tarantinov chaos, ktorý stále dáva zmysel."},
-    {title:"Fight Club", image:"https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=180&q=75", rating:"8.9", description:"Príbeh o dvoch ľuďoch, ktorí to rozbijú (v dobrom)."},
-    {title:"Inception", image:"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=180&q=75", rating:"8.8", description:"Sen, v ktorom sa strácaš viac ako v piatok večer."}
-  ],
-  hry: [
-    {title:"Red Dead Redemption 2", image:"https://github.com/dod-el/perfectglitch/blob/main/images/EGS_RockstarGames_RedDeadRedemption2_G1A_00-1920x1080-308f101576da37225c889173094f373f2afc56c1.webp?raw=true", rating:"9.9"},
-    {title:"Witcher 3", image:"https://github.com/dod-el/perfectglitch/blob/main/images/capsule_616x353_2x.webp?raw=true", rating:"9.8"},
-    {title:"Crimson Desert", image:"https://images.unsplash.com/photo-1493711662062-fa5417278f40?auto=format&fit=crop&w=220&q=75", rating:"9.2"},
-    {title:"Hogwarts Legacy", image:"https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=220&q=75", rating:"8.8"},
-    {title:"God of War Ragnarök", image:"https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=220&q=75", rating:"9.1"}
-  ],
-  serialy: [
-    {title:"Breaking Bad", image:"https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=180&q=75", rating:"9.7", description:"Keď sa jeden učiteľ rozhodne pre poriadne zlú kariérnu zmenu."},
-    {title:"The Last of Us", image:"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=180&q=75", rating:"9.3", description:"Koniec sveta a emócie, ktoré nečakáš."},
-    {title:"Stranger Things", image:"https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=180&q=75", rating:"9.0", description:"Osemdesiatky, záhady a poriadne zvláštne veci."},
-    {title:"Chernobyl", image:"https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=180&q=75", rating:"9.4", description:"Silná miniséria o katastrofe a jej následkoch."},
-    {title:"Dark", image:"https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=180&q=75", rating:"9.1", description:"Časové slučky, rodinné tajomstvá a poriadny hlavolam."}
-  ]
-};
-(function vykresliRebricky(){
-  const escape = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  for (const [key, id] of Object.entries({filmy:'topFilmy',hry:'topHry',serialy:'topSerialy'})) {
-    const list = document.getElementById(id);
-    if (!list) continue;
-    list.innerHTML = ([...REBRICKY_DATA[key]].sort((a,b)=>(parseFloat(String(b.rating).replace(',','.'))||-1)-(parseFloat(String(a.rating).replace(',','.'))||-1))).map((item, i) => `<li tabindex="0" role="button" aria-label="Otvoriť: ${escape(item.title)}" data-description="${escape(item.description || '')}"><span class="num">${i+1}.</span><img class="thumb" src="${escape(item.image)}" alt="Obrázok: ${escape(item.title)}" loading="lazy"><div class="rank-copy"><b>${escape(item.title)}</b><small>${escape(item.description || '')}</small></div><span class="rating">${escape(item.rating)}</span></li>`).join('');
-  }
-})();
-</script>
+
 
 <script>
 (() => {
@@ -309,16 +269,10 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
        function syncSelectedSidebarRankings(){
       for(const [key,id] of Object.entries({filmy:'topFilmy',hry:'topHry',serialy:'topSerialy'})){
         const list=document.getElementById(id);if(!list)continue;
-        const chosen=allReviews.filter(r=>Array.isArray(r.rankings)&&r.rankings.includes(key)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
-        const fallback=REBRICKY_DATA[key]||[];
-        const normalized=v=>String(v||'').trim().toLocaleLowerCase('sk');
-        const used=new Set();
-        const items=[...chosen,...fallback].filter(item=>{const n=normalized(item.title);if(used.has(n))return false;used.add(n);return true;});
-        // Zoradiť podľa skutočného hodnotenia recenzie (ak existuje), inak podľa záložného hodnotenia.
+        // Iba skutočné recenzie zaradené do daného rebríčka.
+        const items=allReviews.filter(r => Array.isArray(r.rankings) && r.rankings.includes(key) && typeof r.content === 'string' && r.content.trim());
         const ratingValue=item=>{
-          const review=findRankReview(item.title);
-          const raw=review?.rating??item.rating;
-          const value=parseFloat(String(raw??'').replace(',', '.'));
+          const value=parseFloat(String(item.rating??'').replace(',', '.'));
           return Number.isFinite(value)?value:-1;
         };
         items.sort((a,b)=>ratingValue(b)-ratingValue(a));
