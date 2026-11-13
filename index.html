@@ -100,7 +100,6 @@
       <div class="reviews" id="popularReviewsList"><p class="no-results">Odporúčané recenzie sa načítavajú…</p></div>
     </section>
 
-    <div id="customRankingsSections"></div>
     <section class="quote-banner" id="omne"><strong>Nie som kritik.<br>Som len veľmi úprimný divák a hráč.</strong><small>Ak ti moja recenzia ušetrí dve hodiny života, tak to má zmysel. ☺</small></section>
   </main>
   <aside class="sidebar" id="odporucania">
@@ -263,7 +262,7 @@ const REBRICKY_DATA = {
       history.replaceState(null,'',url);
     }
 const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'serial' : String(r.type || '').toLowerCase();
-   const latestLimit = 9;
+   const latestLimit = 6;
    let sortedReviews = [];
    const normalize = value => String(value || '').toLocaleLowerCase('sk');
    function applyCategory() {
@@ -292,7 +291,7 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
      if (!Array.isArray(reviews) || !reviews.length) { reviewsList.innerHTML='<p class="no-results">Zatiaľ tu nie sú žiadne recenzie.</p>';return; }
      allReviews = [...reviews];
      sortedReviews = [...reviews].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
-     syncRankingsWithReviews(); renderCustomRankings(); syncSelectedSidebarRankings();
+     syncRankingsWithReviews(); syncSelectedSidebarRankings();
      applyCategory(); renderPopularReviews();
      if (typeof syncFeaturedReviews === 'function') syncFeaturedReviews(allReviews);
      const requested = new URLSearchParams(location.search).get('recenzia');
@@ -306,29 +305,6 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
    // Spoločné prepojenie rebríčkov s recenzie.json podľa názvu (bez ID).
    const normalizeReviewTitle = value => String(value || '').normalize('NFKC').trim().replace(/\s+/g, ' ').toLocaleLowerCase('sk');
    const findRankReview = title => allReviews.find(r => normalizeReviewTitle(r.title) === normalizeReviewTitle(title));
-   // Vlastné rebríčky sa tvoria automaticky z poľa rankings v recenzie.json.
-   function renderCustomRankings(){
-     const target=document.getElementById('customRankingsSections');if(!target)return;
-     target.replaceChildren();
-     const names=[...new Set(allReviews.flatMap(r=>Array.isArray(r.rankings)?r.rankings:[]).filter(n=>typeof n==='string'&&!['filmy','hry','serialy'].includes(n)))];
-     names.forEach(name=>{
-       const selected=allReviews.filter(r=>Array.isArray(r.rankings)&&r.rankings.includes(name)).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
-       if(!selected.length)return;
-       const section=document.createElement('section');section.className='section';
-       const head=document.createElement('div');head.className='section-head';
-       const heading=document.createElement('h2');heading.className='section-title';heading.textContent='🏆 '+name;head.append(heading);
-       const cards=document.createElement('div');cards.className='mini-top';
-       selected.slice(0,5).forEach((r,i)=>{
-         const card=document.createElement('article');card.className='mini-card';card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-label','Otvoriť recenziu: '+r.title);
-         const pic=document.createElement('div');pic.className='mini-image';if(r.image)pic.style.backgroundImage='url('+JSON.stringify(r.image)+')';
-         const rank=document.createElement('span');rank.className='rank';rank.textContent=i+1;pic.append(rank);
-         const title=document.createElement('h4');title.textContent=r.title;card.append(pic,title);
-         const open=()=>openReview(r);
-         card.addEventListener('click',open);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
-         cards.append(card);
-       });section.append(head,cards);target.append(section);
-     });
-   }
    // Pri pravých TOP 5 majú prednosť recenzie označené príslušným rebríčkom.
        function syncSelectedSidebarRankings(){
       for(const [key,id] of Object.entries({filmy:'topFilmy',hry:'topHry',serialy:'topSerialy'})){
@@ -446,7 +422,7 @@ document.getElementById('searchToggle')?.addEventListener('click', () => {
         // Nezobrazovať v HERO recenzie s označením Coming Soon v texte.
         .filter(r => ![r.title, r.subtitle, r.summary, r.content].some(value => /coming\s*soon/i.test(String(value || ''))))
         .sort((a,b) => String(b.date || '').localeCompare(String(a.date || '')));
-      const latest = candidates.find(r=>r.featured===true) || candidates[0];
+      const latest = candidates[0];
       return latest ? {
         tag:category.tag, title:latest.title || 'Nová recenzia', subtitle:latest.subtitle || '',
         description:latest.summary || '', button:'Čítať recenziu', href:'#recenzia',
