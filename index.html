@@ -149,7 +149,7 @@ const REBRICKY_DATA = {
   for (const [key, id] of Object.entries({filmy:'topFilmy',hry:'topHry',serialy:'topSerialy'})) {
     const list = document.getElementById(id);
     if (!list) continue;
-    list.innerHTML = REBRICKY_DATA[key].map((item, i) => `<li tabindex="0" role="button" aria-label="Otvoriť: ${escape(item.title)}" data-description="${escape(item.description || '')}"><span class="num">${i+1}.</span><img class="thumb" src="${escape(item.image)}" alt="Obrázok: ${escape(item.title)}" loading="lazy"><div class="rank-copy"><b>${escape(item.title)}</b><small>${escape(item.description || '')}</small></div><span class="rating">${escape(item.rating)}</span></li>`).join('');
+    list.innerHTML = ([...REBRICKY_DATA[key]].sort((a,b)=>(parseFloat(String(b.rating).replace(',','.'))||-1)-(parseFloat(String(a.rating).replace(',','.'))||-1))).map((item, i) => `<li tabindex="0" role="button" aria-label="Otvoriť: ${escape(item.title)}" data-description="${escape(item.description || '')}"><span class="num">${i+1}.</span><img class="thumb" src="${escape(item.image)}" alt="Obrázok: ${escape(item.title)}" loading="lazy"><div class="rank-copy"><b>${escape(item.title)}</b><small>${escape(item.description || '')}</small></div><span class="rating">${escape(item.rating)}</span></li>`).join('');
   }
 })();
 </script>
@@ -314,6 +314,14 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
         const normalized=v=>String(v||'').trim().toLocaleLowerCase('sk');
         const used=new Set();
         const items=[...chosen,...fallback].filter(item=>{const n=normalized(item.title);if(used.has(n))return false;used.add(n);return true;});
+        // Zoradiť podľa skutočného hodnotenia recenzie (ak existuje), inak podľa záložného hodnotenia.
+        const ratingValue=item=>{
+          const review=findRankReview(item.title);
+          const raw=review?.rating??item.rating;
+          const value=parseFloat(String(raw??'').replace(',', '.'));
+          return Number.isFinite(value)?value:-1;
+        };
+        items.sort((a,b)=>ratingValue(b)-ratingValue(a));
         list.replaceChildren();
         items.forEach((item,i)=>{
           const review=findRankReview(item.title);
