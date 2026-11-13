@@ -1,5 +1,103 @@
 [
   {
+    "id": "sin-city-2005-45571",
+    "title": "Sin City (2005)",
+    "type": "film",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/sin%20city.webp?raw=true",
+    "summary": "Depresívna prehliadka najväčšej spodiny ľudstva, kde jediný spôsob, ako sa dožiť zajtrajšieho rána, je byť buď extrémne sexy striptérka so samopaľom, alebo nezničiteľný kus mäsa s morálnym kompasom zatúlaného psa.",
+    "content": "Marv v podaní Mickeyho Rourka vyzerá ako chodiacia reklama na zanedbanú plastickú chirurgiu trpiaca ťažkou stratou pamäti, čo rieši tým, že každého podozrivého najprv umláti na kašu a až potom sa ho pýta na meno.\n\nBruce Willis ako starnúci policajt so slabým srdcom strávi osem rokov v diere len preto, aby po prepustení okamžite vytrhol gule slizkému žltému pedofilovi z vplyvnej politickej rodiny.\n\nCelá štvrť Starého mesta funguje ako ozbrojený feministický bordel, kde partia domín v kožených korzetoch so samurajskými mečmi vládne uliciam lepšie než miestna polícia.\n\nElijah Wood tu bez jediného slova a s úsmevom miništranta žerie mladé prostitútky na statku a zbiera si ich hlavy ako trofeje, čím definitívne pochoval akúkoľvek spomienku na milého hobita Froda.\n\nVizuálna stránka filmu vyzerá ako oživený komiksový zošit nastriekaný lacným sprejom, kde namiesto normálnej červenej krvi strieka z odseknutých končatín žiarivo biela alebo neónovo žltá žbrnda, aby to náhodou nepôsobilo príliš realisticky.",
+    "featured": false,
+    "rankings": [],
+    "rating": 8.1
+  },
+  {
+    "id": "shoot-em-up-2007-58308",
+    "title": "Shoot 'Em Up (2007)",
+    "type": "film",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/shoot%20em%20up.webp?raw=true",
+    "summary": "Jeden a pol hodinový mokrý sen dvanásťročného pubertiaka s nadbytkom testosterónu, v ktorom má obyčajná koreňová zelenina vyššie skóre zabití než priemerný sériový vrah.",
+    "content": "Clive Owen hrá tajomného mrzúta menom Smith, ktorý má len dve životné vášne a to chrúmanie surovej mrkvy ako prerastený králik a zabíjanie desiatok ozbrojených mafiánov všetkým, čo mu práve príde pod ruku.\n\nCelá zápletka sa točí okolo novorodenca, ktorý prežije viac prestreliek, pádov z výšky a výbuchov než priemerný akčný hrdina, pričom si zrejme ani necvrkne do plienky.\n\nMonica Bellucci tu stvárňuje dojčiacu prostitútku, ktorá aj uprostred krvavej prestrelky vyzerá ako z titulky módneho časopisu a stihne si s hlavným hrdinom strihnúť jednu z najbizarnejších sexuálnych scén v dejinách filmu.\n\nPaul Giamatti ako hlavný záporák je slizký psychopat s neustálym nutkaním telefonovať svojej otravnej manželke presne vo chvíli, keď niekomu drví prsty.\n\nZbrane v tomto filme nepotrebujú prebíjať, gravitácia funguje len vtedy, keď sa to hodí kameramanovi, a hlavný hrdina dokáže odstreliť protivníka aj obyčajným priblížením zásobníka k rozpálenému krbu, lebo fyzika zrejme ostala na vrátnici.",
+    "featured": false,
+    "rankings": [
+      "Filmy na pobavenie"
+    ],
+    "rating": 7
+  },
+  {
+    "id": "dungeons-dragons-honor-among-thieves-81926",
+    "title": "Dungeons & Dragons: Honor among Thieves (2023)",
+    "type": "film",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/dungeons%20and%20dragons.webp?raw=true",
+    "summary": "Prekvapivo zábavná fantasy komédia, ktorá dokázala vziať nekonečné hádzanie dvadsaťstennými kockami a premeniť ho na drahý cirkus plný neschopných babrákov.",
+    "content": "Chris Pine tu hrá barda, ktorého jedinou superschopnosťou je vymýšľať trápne plány a hrať na lutnu v momentoch, keď zvyšok jeho partie práve dostáva brutálnu nakladačku od polomŕtvych rytierov.\n\nMichelle Rodriguez ako nahnevaná barbarka Holga s úchylkou na miniatúrnych chlapov vybavuje každú konverzáciu ránou do ksichtu.\n\nČarodejník Simon je chodiacou reklamou na zlyhanie magického školstva. Nevyjde mu ani jedno kúzlo bez toho, aby si nevyhodil do vzduchu vlastné gate a potom sa celú dobu len ľutuje.\n\nHugh Grant si úlohu slizkého podvodníka užíva s takým diabolským nadšením, akoby práve okradol detský domov, a dokazuje, že jedinou skutočnou mágiou v tomto svete je poriadny podvod na daňových poplatníkoch.\n\nObézny drak z podzemia mal na plátne menej priestoru, než by si jeho majestátny pupok zaslúžil.",
+    "featured": false,
+    "rankings": [
+      "Filmy na pobavenie"
+    ],
+    "rating": 7.4
+  },
+  {
+    "id": "rick-and-morty-57908",
+    "title": "Rick and Morty",
+    "type": "seriál",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/rick%20a%20morty.webp?raw=true",
+    "summary": "Animovaná nihilistická jazda pre ľudí, ktorí si myslia, že sú príliš inteligentní na bežné sitcomy, no v skutočnosti sa len radi smejú na grganí, vesmírnych genocídach a existenciálnej depresii.",
+    "content": "Rick Sanchez je najinteligentnejší muž vo vesmíre, ktorý dokáže vytvoriť umelý vesmír len preto, aby mu poháňal batériu v aute, no zároveň je to totálna ľudská troska, ktorá rieši svoje mindráky chlastom a zneužívaním vlastnej rodiny.\n\nJeho vnuk Morty je zakoktaný pubertálny chudák s permanentným záchvatom úzkosti, ktorého jedinou úlohou v živote je slúžiť ako živý štít, zakopávať vlastné mŕtvoly z alternatívnych realít a zúfalo sa pokúšať o prvý sex.\n\nZvyšok rodiny Smithovcov tvorí totálne zbytočný otec Jerry, ktorého by prevalcoval aj inteligentnejší hriankovač, a matka Beth s komplexom boha, ktorá je taká posadnutá vlastným otcom, že by kvôli nemu nechala zhorieť celú planétu.\n\nKaždá epizóda je len zámienkou na to, aby tvorcovia mohli nakresliť čo najnechutnejšie mimozemské orgie, roztrhať na kusy desiatky nevinných civilistov a nakoniec to celé zabiť trápnou lekciou o tom, že nič v živote nemá zmysel.\n\nNajhoršou časťou celého seriálu nie je samotný dej, ale jeho toxická fanúšikovská základňa, ktorá si pri pozeraní vtipov o nakladanej uhorke pripadá, akoby práve vyriešila kvantovú fyziku.",
+    "featured": false,
+    "rankings": [
+      "serialy",
+      "TOP animované seriály"
+    ],
+    "rating": 8.6
+  },
+  {
+    "id": "peacemaker-99938",
+    "title": "Peacemaker",
+    "type": "seriál",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/peacemaker.webp?raw=true",
+    "summary": "Vulgárna komiksová terapia od Jamesa Gunna, kde John Cena v slipoch a smiešnej chrómovej helme dokazuje, že svetový mier sa najlepšie nastoľuje guľkou medzi oči každého, kto s ním nesúhlasí.",
+    "content": "Hlavný hrdina Christopher Smith je chodiacou hromadou svalov a detských tráum s mentálnou vyspelosťou dvanásťročného školáka, ktorý úprimne verí, že ak pre mier musí vyvraždiť celú dedinu žien a detí, je to dobrý skutok.\n\nCelý jeho tajný vládny tím je partia absolútnych zúfalcov na odstrel, v ktorej figuruje krvilačná psychopatka, ustráchaný ajťák s farbenou bradou a tučná lesbička, ktorá sa do akcie dostala len cez rodinnú protekciu.\n\nJeho najlepší kamarát Vigilante je nekontrolovateľný sociopat v spandexe, ktorý súsmevom na tvári rozstrieľa celú rodinu na kusy a potom sa urazí, keď mu Peacemaker nedá za odmenu high five.\n\nVlastný otec hlavného hrdinu je zarytý neonacistický rasista, ktorý si v pivnici vyrába superhrdinské brnenie a svojho syna nenávidí viac než celé OSN dokopy.\n\nCelý seriál má zrejme najlepšiu a najtrápnejšiu úvodnú zvučku v histórii televízie, kde všetci herci s kamennou tvárou tancujú ako roboti na hair metal z osemdesiatych rokov a ty ju ani raz nepreskočíš.",
+    "featured": false,
+    "rankings": [
+      "serialy",
+      "Seriály na pobavenie"
+    ],
+    "rating": 8.4
+  },
+  {
+    "id": "my-hero-academia-88422",
+    "title": "My Hero Academia",
+    "type": "seriál",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/mha.webp?raw=true",
+    "summary": "Japonský animovaný ošiaľ, kde osemdesiat percent ľudstva dostalo superschopnosti, no väčšina z nich vyzerá ako nepodarené genetické pokusy a zvyšok sa tvári, že zachraňovať svet v pestrofarebných plavkách je seriózna kariéra.",
+    "content": "Hlavný hrdina Deku je najväčší ufňukaný masochista v dejinách anime, ktorý si prvé tri série láme všetky kosti v tele zakaždým, keď sa len pokúsi pohnúť malíčkom, a namiesto poriadnej bitky radšej dvadsať minút vreští o priateľstve a snoch.\n\nSymbol mieru All Might je chodiaci americký gýč na steroidoch s trvalým kŕčom v lícach, ktorý sa v civile mení na vyziabnutú trosku pľujúcu krv, no aj tak sa rozhodne odovzdať svoju božskú silu prvému zarevancovi, ktorého stretne na ulici.\n\nHlavný zloduch All For One vyzerá ako Darth Vader po zrážke s kombajnom a má dvestoročný komplex boha, pretože celú svoju existenciu zasvätil tomu, aby kradol schopnosti iným.\n\nCelá prestížna stredná škola pre budúcich hrdinov funguje s nulovým pudom sebazáchovy, pretože vedenie bez mihnutia oka pošle partiu pätnásťročných detí do lesa plného masových vrahov a potom sa čuduje, prečo ich zase niekto uniesol.\n\nHlavný konkurent Bakugo je chodiacou reklamou na zlyhanie detskej psychiatrie, ktorého jedinou povahovou črtou je neustále vrieskanie, záchvaty zlosti a vyhrážanie sa smrťou všetkým okolo vrátane vlastného tieňa.",
+    "featured": false,
+    "rankings": [
+      "TOP anime seriály"
+    ],
+    "rating": 8
+  },
+  {
+    "id": "fallout-69185",
+    "title": "Fallout",
+    "type": "seriál",
+    "date": "2026-11-13",
+    "image": "https://github.com/dod-el/perfectglitch/blob/main/images/fallout.webp?raw=true",
+    "summary": "Postapokalyptická jazda od Amazonu, ktorá konečne dokázala, že herná adaptácia nemusí vyzerať ako lacný študentský projekt, ak do nej naleješ hromadu peňazí, retro hudbu a litrami striekajúcu krv.",
+    "content": "Hlavná hrdinka Lucy vylezie z podzemného krytu s naivitou skautky z pomocnej školy a úsmevom zubnej pasty, no netrvá dlho a rádioaktívna pustatina jej veľmi rýchlo vysvetlí, že slušnosťou si tu nevyjednáš ani len konzervu psieho žrádla.\n\nRytier Maximus z Bratstva ocele je v podstate ustráchaný babrák v plechovom brnení za milión dolárov, ktorý by bez pomoci svojho poskoka nedokázal ani sám odísť na záchod, nieto ešte nastoliť poriadok v pustatine.\n\nWalton Goggins ako rozpadávajúci sa beznosý Ghoul si kradne každú sekundu pre seba a s takým pôžitkom odstreľuje ľuďom končatiny, že mu okamžite odpustíš, že vyzerá ako oživená sušená slivka v kovbojskom klobúku.\n\nCelý seriál je jedna veľká obžaloba nenažraného kapitalizmu, kde ti korporácie s úsmevom na perách predajú poistenie proti jadrovej vojne a potom tú vojnu samy odpália, aby im sedeli kvartálne tabuľky v Exceli.\n\nNásilie je tu také absurdné a prestrelené, že hlavy vybuchujú ako prezreté melóny zatiaľ čo mutanti žerú ľudí za zvukov veselých hitov z päťdesiatych rokov.",
+    "featured": false,
+    "rankings": [
+      "TOP sci-fi seriály"
+    ],
+    "rating": 8.3
+  },
+  {
     "id": "the-witcher-35393",
     "title": "The Witcher",
     "type": "seriál",
@@ -13,7 +111,7 @@
   },
   {
     "id": "tropic-thunder-2008-22198",
-    "title": "Tropic Thunder 2008",
+    "title": "Tropic Thunder (2008)",
     "type": "film",
     "date": "2026-11-13",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/tropic%20thunder.webp?raw=true",
@@ -105,7 +203,7 @@
   },
   {
     "id": "violent-night-2022-75211",
-    "title": "Violent Night 2022",
+    "title": "Violent Night (2022)",
     "type": "film",
     "date": "2026-11-12",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/ViolentNight_keyart_mobile_3840x2160.webp?raw=true",
@@ -119,7 +217,7 @@
   },
   {
     "id": "gantz-o-2016-83724",
-    "title": "Gantz:O 2016",
+    "title": "Gantz:O (2016)",
     "type": "film",
     "date": "2026-11-12",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/gantzo.webp?raw=true",
@@ -133,7 +231,7 @@
   },
   {
     "id": "bullet-train-2022-82907",
-    "title": "Bullet Train 2022",
+    "title": "Bullet Train (2022)",
     "type": "film",
     "date": "2026-11-12",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/bullet%20train.webp?raw=true",
@@ -148,7 +246,7 @@
   },
   {
     "id": "road-house-2024-23438",
-    "title": "Road House 2024",
+    "title": "Road House (2024)",
     "type": "film",
     "date": "2026-11-12",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/roadhouse.webp?raw=true",
@@ -175,7 +273,7 @@
   },
   {
     "id": "fall-guy-2024-99865",
-    "title": "Fall Guy 2024",
+    "title": "Fall Guy (2024)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/fallguy.webp?raw=true",
@@ -189,7 +287,7 @@
   },
   {
     "id": "the-gray-man-2022-19447",
-    "title": "The Gray Man 2022",
+    "title": "The Gray Man (2022)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/gray%20man.webp?raw=true",
@@ -203,7 +301,7 @@
   },
   {
     "id": "predator-badlands-2025-27400",
-    "title": "Predator: Badlands 2025",
+    "title": "Predator: Badlands (2025)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/predator-badlands-review-1.webp?raw=true",
@@ -215,7 +313,7 @@
   },
   {
     "id": "fantastic-four-first-steps-2025-58642",
-    "title": "Fantastic Four: First Steps 2025",
+    "title": "Fantastic Four: First Steps (2025)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/fantastic-four-first-steps%20(1).webp?raw=true",
@@ -227,7 +325,7 @@
   },
   {
     "id": "captain-america-brave-new-world-2025-21207",
-    "title": "Captain America: Brave New World 2025",
+    "title": "Captain America: Brave New World (2025)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/captain%20america%20brave%20new%20world.webp?raw=true",
@@ -239,7 +337,7 @@
   },
   {
     "id": "thunderbolts-2025-12527",
-    "title": "Thunderbolts* 2025",
+    "title": "Thunderbolts* (2025)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/thunderbolts.webp?raw=true",
@@ -251,7 +349,7 @@
   },
   {
     "id": "frankenstein-2025-24180",
-    "title": "Frankenstein 2025",
+    "title": "Frankenstein (2025)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/frankenstein.webp?raw=true",
@@ -263,7 +361,7 @@
   },
   {
     "id": "edge-of-tomorrow-2014-37397",
-    "title": "Edge of Tomorrow 2014",
+    "title": "Edge of Tomorrow (2014)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/edge%20of%20tomorrow.webp?raw=true",
@@ -278,7 +376,7 @@
   },
   {
     "id": "disclosure-day-2026-48400",
-    "title": "Disclosure Day 2026",
+    "title": "Disclosure Day (2026)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/disclosure%20day.webp?raw=true",
@@ -290,7 +388,7 @@
   },
   {
     "id": "masters-of-the-universe-2026-98586",
-    "title": "Masters of the Universe 2026",
+    "title": "Masters of the Universe (2026)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/masters-of-universe_horizontal_poster2-51d3fdf0-501c-11f1-8493-b902327c6dac.webp?raw=true",
@@ -302,7 +400,7 @@
   },
   {
     "id": "resident-evil-2026-86810",
-    "title": "Resident Evil 2026",
+    "title": "Resident Evil (2026)",
     "type": "film",
     "date": "2026-11-11",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/resident-evil-11-3-2026-1-768x432.webp?raw=true",
@@ -403,7 +501,7 @@
   },
   {
     "id": "tenet-2020-10369",
-    "title": "Tenet 2020",
+    "title": "Tenet (2020)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/tenet.webp?raw=true",
@@ -417,7 +515,7 @@
   },
   {
     "id": "interstellar-2014-82318",
-    "title": "Interstellar 2014",
+    "title": "Interstellar (2014)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/intersterllar.webp?raw=true",
@@ -432,7 +530,7 @@
   },
   {
     "id": "inception-2010-94185",
-    "title": "Inception 2010",
+    "title": "Inception (2010)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/inception.webp?raw=true",
@@ -448,7 +546,7 @@
   },
   {
     "id": "matrix-resurrections-2021-85622",
-    "title": "Matrix Resurrections 2021",
+    "title": "Matrix Resurrections (2021)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/matrix4-6af34b3107584.webp?raw=true",
@@ -460,7 +558,7 @@
   },
   {
     "id": "matrix-revolutions-2003-83297",
-    "title": "Matrix Revolutions 2003",
+    "title": "Matrix Revolutions (2003)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/matrix3-6af34b30d5bdc.webp?raw=true",
@@ -472,7 +570,7 @@
   },
   {
     "id": "matrix-reloaded-2003-65576",
-    "title": "Matrix Reloaded 2003",
+    "title": "Matrix Reloaded (2003)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/matrix2-6af34b322a2b3.webp?raw=true",
@@ -486,7 +584,7 @@
   },
   {
     "id": "matrix-1999-84144",
-    "title": "Matrix 1999",
+    "title": "Matrix (1999)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/matrix1-6af34b323b764.webp?raw=true",
@@ -513,7 +611,7 @@
   },
   {
     "id": "pan-prstenov-navrat-krala-2003-08093",
-    "title": "Pán prsteňov: Návrat kráľa 2003",
+    "title": "Pán prsteňov: Návrat kráľa (2003)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/lotr3-6af34b335d369.webp?raw=true",
@@ -529,7 +627,7 @@
   },
   {
     "id": "pan-prstenov-dve-veze-2002-50976",
-    "title": "Pán prsteňov: Dve veže 2002",
+    "title": "Pán prsteňov: Dve veže (2002)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/lotr2.webp?raw=true",
@@ -544,7 +642,7 @@
   },
   {
     "id": "pan-prstenov-spolocenstvo-prstena-2001-99387",
-    "title": "Pán prsteňov: Spoločenstvo prsteňa 2001",
+    "title": "Pán prsteňov: Spoločenstvo prsteňa (2001)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/lotr1-6af34b33b0add.webp?raw=true",
@@ -560,7 +658,7 @@
   },
   {
     "id": "the-wrecking-crew-2026-06931",
-    "title": "The Wrecking Crew 2026",
+    "title": "The Wrecking Crew (2026)",
     "type": "film",
     "date": "2026-11-10",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/wrecking%20crew.webp?raw=true",
@@ -572,7 +670,7 @@
   },
   {
     "id": "supergirl-2026-13853",
-    "title": "Supergirl 2026",
+    "title": "Supergirl (2026)",
     "type": "film",
     "date": "2026-11-08",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/supergirl.webp?raw=true",
@@ -584,7 +682,7 @@
   },
   {
     "id": "the-odyssey-2026-29865",
-    "title": "The Odyssey 2026",
+    "title": "The Odyssey (2026)",
     "type": "film",
     "date": "2026-11-08",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/Odysea.webp?raw=true",
@@ -1166,7 +1264,7 @@
   },
   {
     "id": "mortal-kombat-ii-85476",
-    "title": "Mortal Kombat II 2026",
+    "title": "Mortal Kombat II (2026)",
     "type": "film",
     "date": "2026-05-28",
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/Mortal-Kombat-II-2026.webp?raw=true",
@@ -1176,7 +1274,7 @@
     "rating": 6.8
   },
   {
-    "title": "Clayface 2026",
+    "title": "Clayface (2026)",
     "type": "film",
     "rating": 7.3,
     "date": "2026-11-03",
@@ -1185,7 +1283,7 @@
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/clayface-2026.webp?raw=true"
   },
   {
-    "title": "Street Fighter 2026",
+    "title": "Street Fighter (2026)",
     "type": "film",
     "rating": 6.7,
     "date": "2026-11-05",
@@ -1194,7 +1292,7 @@
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/streetfighter-2026.webp?raw=true"
   },
   {
-    "title": "Spider-Man: Brand New Day 2026",
+    "title": "Spider-Man: Brand New Day (2026)",
     "type": "film",
     "rating": 8,
     "date": "2026-10-18",
@@ -1203,7 +1301,7 @@
     "image": "https://github.com/dod-el/perfectglitch/blob/main/images/Zz1kZjFkOTdmMjhhYTUxMWYxYjM5ZDQ2N2M4ODUzNGI0NA==.webp?raw=true"
   },
   {
-    "title": "Superman 2025",
+    "title": "Superman (2025)",
     "type": "film",
     "rating": 8.5,
     "date": "2026-10-05",
