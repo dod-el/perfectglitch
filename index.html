@@ -309,7 +309,7 @@ const reviewType = r => String(r.type || '').toLowerCase() === 'seriál' ? 'seri
         const n=Number(raw);
         return Number.isFinite(n)&&n>=0&&n<=10?n:null;
       };
-      const items=allReviews.filter(r=>validType(r)&&typeof r.content==='string'&&r.content.trim()&&score(r)!==null)
+      const items=allReviews.filter(r=>validType(r)&&typeof r.content==='string'&&r.content.trim()&&score(r)!==null&&score(r)<=6)
         .sort((a,b)=>score(a)-score(b)||String(b.date||'').localeCompare(String(a.date||'')));
       list.replaceChildren();
       items.forEach((item,i)=>{
