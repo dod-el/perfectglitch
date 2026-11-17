@@ -27,7 +27,22 @@
 .page-main{min-height:65vh;padding:38px 0 70px}.page-intro{margin-bottom:24px}.page-intro h1{font-size:clamp(30px,4vw,48px);text-transform:uppercase;margin:0 0 8px}.page-intro p{color:var(--muted);max-width:750px}.review-card{cursor:pointer}.review-card[hidden]{display:none!important}.article-body{white-space:pre-line;line-height:1.8;color:#d4dfe5}.empty-note{padding:22px;border:1px dashed var(--line);border-radius:8px;color:var(--muted)}.content-block{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:10px;max-width:850px}.content-block p{color:var(--muted)}
 
 /* Samostatné rebríčky */
-.ranking-controls{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 15px}.ranking-filter{border:1px solid #2d4451;background:#0c1922;color:#d6e4eb;padding:10px 15px;border-radius:7px;font-weight:800;cursor:pointer}.ranking-filter.active,.ranking-filter:hover{background:var(--green);color:#041008;border-color:var(--green)}.ranking-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.ranking-card{background:linear-gradient(180deg,#0d1922,#071018);border:1px solid #263844;border-radius:9px;overflow:hidden;cursor:pointer;color:inherit;text-align:left;padding:0;width:100%}.ranking-card:hover,.ranking-card:focus-visible{border-color:var(--green);outline:none;transform:translateY(-2px)}.ranking-image{height:90px;background:linear-gradient(125deg,#102b31,#173b2c 55%,#0b1922);position:relative}.ranking-image .tag{position:absolute;bottom:10px;left:12px}.ranking-info{padding:16px}.ranking-info h2{font-size:19px;line-height:1.25;margin:0 0 9px}.ranking-info p{color:var(--muted);font-size:13px;margin:0 0 13px}.ranking-info small{color:#a9bdc9}.ranking-status{font-size:12px;color:var(--muted);margin-bottom:12px}.ranking-detail{width:min(850px,100%)}.ranking-detail .detail-cover{width:100%;max-height:270px;object-fit:cover;border-radius:8px;margin-top:14px}.ranking-intro{white-space:pre-line}.ranking-entries{list-style:none;padding:0;margin:22px 0 0}.ranking-entries li{border-top:1px solid #29404d;padding:17px 0;display:grid;grid-template-columns:46px minmax(0,1fr);gap:13px}.ranking-position{font-size:23px;color:var(--green);font-weight:1000}.ranking-entries h3{margin:0 0 5px;font-size:19px}.ranking-entries p{white-space:pre-line;margin:0;line-height:1.7}.ranking-entries img{max-width:100%;max-height:220px;object-fit:cover;border-radius:7px;margin:10px 0}.ranking-detail .modal-meta{margin-bottom:8px}@media(max-width:900px){.ranking-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.ranking-grid{grid-template-columns:1fr}.ranking-image{height:195px}}
+.ranking-controls{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0 15px}.ranking-filter{border:1px solid #2d4451;background:#0c1922;color:#d6e4eb;padding:10px 15px;border-radius:7px;font-weight:800;cursor:pointer}.ranking-filter.active,.ranking-filter:hover{background:var(--green);color:#041008;border-color:var(--green)}.ranking-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.ranking-card{background:linear-gradient(180deg,#0d1922,#071018);border:1px solid #263844;border-radius:9px;overflow:hidden;cursor:pointer;color:inherit;text-align:left;padding:0;width:100%}.ranking-card:hover,.ranking-card:focus-visible{border-color:var(--green);outline:none;transform:translateY(-2px)}.ranking-image{height:90px;background:linear-gradient(125deg,#102b31,#173b2c 55%,#0b1922);position:relative}.ranking-image .tag{position:absolute;bottom:10px;left:12px}.ranking-info{padding:16px}.ranking-info h2{font-size:19px;line-height:1.25;margin:0 0 9px}.ranking-info p{color:var(--muted);font-size:13px;margin:0 0 13px}.ranking-info small{color:#a9bdc9}.ranking-status{font-size:12px;color:var(--muted);margin-bottom:12px}.ranking-detail{width:min(850px,100%)}.ranking-detail .detail-cover{width:100%;max-height:270px;object-fit:cover;border-radius:8px;margin-top:14px}.ranking-intro{white-space:pre-line}.ranking-entries{list-style:none;padding:0;margin:22px 0 0}.ranking-entries li{border-top:1px solid #29404d;padding:17px 0;display:grid;grid-template-columns:46px minmax(0,1fr);gap:13px}.ranking-position{font-size:23px;color:var(--green);font-weight:1000}.ranking-entries h3{margin:0 0 5px;font-size:19px}.ranking-entries p{white-space:pre-line;margin:0;line-height:1.7}.ranking-entries img{max-width:100%;max-height:220px;object-fit:cover;border-radius:7px;margin:10px 0}.ranking-detail .modal-meta{margin-bottom:8px}
+.ranking-sortbar{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin:20px 0 4px;padding:12px;background:#0b1b24;border:1px solid #29404d;border-radius:8px;color:var(--muted);font-size:12px;font-weight:800}
+.ranking-sortbar select{background:#f2f6f8;color:#101820;border:1px solid #526875;border-radius:6px;padding:9px 12px;font:inherit;font-weight:800;max-width:100%}
+.ranking-entries li{grid-template-columns:42px minmax(0,1fr);align-items:start}
+.ranking-entry-content{min-width:0}
+.ranking-entry-top{display:grid;grid-template-columns:116px minmax(0,1fr);gap:14px;align-items:start}
+.ranking-entry-image{width:116px;height:150px;object-fit:cover;border-radius:7px;background:#142630;border:1px solid #29404d}
+.ranking-entry-image[hidden]{display:none}
+.ranking-entry-copy{min-width:0}
+.ranking-entry-copy h3{margin:0 0 6px}
+.ranking-entry-meta{font-size:11px;color:var(--muted);margin-bottom:8px}
+.ranking-entry-comment{white-space:pre-line;margin:0;line-height:1.6;color:#d4dfe5}
+.ranking-review-link{display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:9px 12px;background:var(--green);color:#041008;border-radius:5px;font-size:11px;font-weight:950;text-transform:uppercase}
+.ranking-review-link:hover{filter:brightness(1.1);transform:translateY(-1px)}
+@media(max-width:560px){.ranking-entry-top{grid-template-columns:88px minmax(0,1fr);gap:10px}.ranking-entry-image{width:88px;height:120px}.ranking-entry-copy h3{font-size:16px}.ranking-entry-comment{font-size:13px}.ranking-sortbar{justify-content:space-between}.ranking-sortbar select{flex:1}}
+@media(max-width:900px){.ranking-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.ranking-grid{grid-template-columns:1fr}.ranking-image{height:195px}}
 </style>
 </head>
 <body><header class="site-header">
@@ -39,7 +54,7 @@
   </div>
   <nav id="mobileNav" hidden aria-label="Mobilná navigácia" style="padding:0 18px 15px;display:flex;gap:15px;flex-wrap:wrap;font-size:12px;font-weight:800;text-transform:uppercase"><a href="index.html">Domov</a><a href="filmy.html">Filmy</a><a href="serialy.html">Seriály</a><a href="hry.html">Hry</a><a href="rebricky.html">Rebríčky</a><a href="clanky.html">Články</a><a href="o-mne.html">O mne</a></nav>
 </header>
-<div class="search-panel" id="searchPanel" hidden><div class="wrap search-inner"><label for="siteSearch">Hľadať na stránke</label><input id="siteSearch" type="search" placeholder="Názov filmu, seriálu alebo hry"><span id="searchStatus">Začni písať názov.</span></div></div><main class="wrap page-main"><div class="page-intro"><h1>🏆 Rebríčky</h1><p>Najlepšie, najhoršie a najbizarnejšie výbery filmov, seriálov a hier.</p></div><div class="ranking-controls" aria-label="Filtrovanie rebríčkov"><button type="button" class="ranking-filter active" data-filter="all" aria-pressed="true">Všetky</button><button type="button" class="ranking-filter" data-filter="film" aria-pressed="false">🎬 Filmy</button><button type="button" class="ranking-filter" data-filter="serial" aria-pressed="false">📺 Seriály</button><button type="button" class="ranking-filter" data-filter="hra" aria-pressed="false">🎮 Hry</button></div><div id="rankingStatus" class="ranking-status" aria-live="polite"></div><div id="rankingList" class="ranking-grid"><p class="empty-note">Načítavam rebríčky…</p></div></main><div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card ranking-detail"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle"></h2><div class="modal-meta" id="modalMeta"></div><img id="rankingDetailImage" class="detail-cover" alt="" hidden><div class="article-body ranking-intro" id="modalIntro"></div><ol class="ranking-entries" id="rankingEntries"></ol></article></div><footer class="footer" ><div class="wrap"><div class="footer-inner"><a class="brand" href="#domov"><span class="brand-icon">🍿</span><div><div class="brand-name">Perfect Glitch</div><div class="brand-sub">FILMY · SERIÁLY · HRY · HUMOR</div></div></a><nav class="footer-links"><a href="index.html">Domov</a><a href="filmy.html">Filmy</a><a href="serialy.html">Seriály</a><a href="hry.html">Hry</a><a href="rebricky.html">Rebríčky</a><a href="clanky.html">Články</a><a href="o-mne.html">O mne</a></nav><div class="social" aria-label="Sociálne siete"><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a></div></div><div class="copyright">© 2026 Perfect Glitch · Filmy, hry, humor. To je život. <span style="float:right">Ukážkové recenzie a rebríčky zatiaľ slúžia na prezentáciu dizajnu.</span></div></div></footer>
+<div class="search-panel" id="searchPanel" hidden><div class="wrap search-inner"><label for="siteSearch">Hľadať na stránke</label><input id="siteSearch" type="search" placeholder="Názov filmu, seriálu alebo hry"><span id="searchStatus">Začni písať názov.</span></div></div><main class="wrap page-main"><div class="page-intro"><h1>🏆 Rebríčky</h1><p>Najlepšie, najhoršie a najbizarnejšie výbery filmov, seriálov a hier.</p></div><div class="ranking-controls" aria-label="Filtrovanie rebríčkov"><button type="button" class="ranking-filter active" data-filter="all" aria-pressed="true">Všetky</button><button type="button" class="ranking-filter" data-filter="film" aria-pressed="false">🎬 Filmy</button><button type="button" class="ranking-filter" data-filter="serial" aria-pressed="false">📺 Seriály</button><button type="button" class="ranking-filter" data-filter="hra" aria-pressed="false">🎮 Hry</button></div><div id="rankingStatus" class="ranking-status" aria-live="polite"></div><div id="rankingList" class="ranking-grid"><p class="empty-note">Načítavam rebríčky…</p></div></main><div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card ranking-detail"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle"></h2><div class="modal-meta" id="modalMeta"></div><img id="rankingDetailImage" class="detail-cover" alt="" hidden><div class="article-body ranking-intro" id="modalIntro"></div><div class="ranking-sortbar"><label for="rankingSort">Zoradiť položky:</label><select id="rankingSort"><option value="date">Dátum pridania – najnovšie</option><option value="year">Rok vydania – najnovšie</option></select></div><ol class="ranking-entries" id="rankingEntries"></ol></article></div><footer class="footer" ><div class="wrap"><div class="footer-inner"><a class="brand" href="#domov"><span class="brand-icon">🍿</span><div><div class="brand-name">Perfect Glitch</div><div class="brand-sub">FILMY · SERIÁLY · HRY · HUMOR</div></div></a><nav class="footer-links"><a href="index.html">Domov</a><a href="filmy.html">Filmy</a><a href="serialy.html">Seriály</a><a href="hry.html">Hry</a><a href="rebricky.html">Rebríčky</a><a href="clanky.html">Články</a><a href="o-mne.html">O mne</a></nav><div class="social" aria-label="Sociálne siete"><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a></div></div><div class="copyright">© 2026 Perfect Glitch · Filmy, hry, humor. To je život. <span style="float:right">Ukážkové recenzie a rebríčky zatiaľ slúžia na prezentáciu dizajnu.</span></div></div></footer>
 
 <script>
 (()=>{
@@ -47,17 +62,53 @@
  const status=document.getElementById('rankingStatus');
  const search=document.getElementById('siteSearch');
  const categories={film:'🎬 Filmy',serial:'📺 Seriály',hra:'🎮 Hry'};
- let rankings=[],category='all',lastFocus=null;
+ let rankings=[],category='all',lastFocus=null,activeRanking=null,rankingSort='date';
  const normalize=v=>String(v||'').toLocaleLowerCase('sk').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
  const type=v=>{const x=normalize(v);return x==='serial'||x==='serialy'||x==='serialy'?'serial':x==='hry'?'hra':x==='filmy'?'film':x};
  const safeImage=v=>{const x=String(v||'').trim();return /^(https:\/\/|images\/)[^<>"'`]*$/i.test(x)?x:''};
  const create=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
- function openRanking(r){lastFocus=document.activeElement;document.getElementById('modalTitle').textContent=r.title||'';document.getElementById('modalTag').textContent=categories[type(r.category)]||'🏆 Rebríček';document.getElementById('modalMeta').textContent=[r.date,`${(r.items||[]).length} položiek`].filter(Boolean).join(' · ');document.getElementById('modalIntro').textContent=r.intro||'';
- const img=document.getElementById('rankingDetailImage');img.hidden=true;img.removeAttribute('src');
- const entries=document.getElementById('rankingEntries');entries.replaceChildren();(r.items||[]).forEach((item,i)=>{const li=create('li');li.append(create('span','ranking-position',String(i+1)+'.'));const body=create('div');body.append(create('h3','',item.title||'Bez názvu'));body.append(create('p','',item.comment||''));li.append(body);entries.append(li)});
- modal.hidden=false;document.body.style.overflow='hidden';modal.querySelector('.modal-close').focus()}
+  const releaseYear=item=>{
+    const explicit=Number(item.year||item.releaseYear||item.productionYear);
+    if(Number.isInteger(explicit)&&explicit>=1888&&explicit<=2100)return explicit;
+    const match=String(item.title||'').match(/\b(18[8-9]\d|19\d{2}|20\d{2}|2100)\b/);
+    return match?Number(match[0]):null;
+  };
+  function sortedItems(r){
+    const items=[...(r.items||[])];
+    if(rankingSort==='year')return items.sort((a,b)=>(releaseYear(b)||0)-(releaseYear(a)||0)||String(b.date||'').localeCompare(String(a.date||'')));
+    return items.sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')));
+  }
+  function renderRankingEntries(){
+    if(!activeRanking)return;
+    const entries=document.getElementById('rankingEntries');entries.replaceChildren();
+    sortedItems(activeRanking).forEach((item,i)=>{
+      const li=create('li');li.append(create('span','ranking-position',String(i+1)+'.'));
+      const body=create('div','ranking-entry-content');
+      const top=create('div','ranking-entry-top');
+      const imageUrl=safeImage(item.image);
+      if(imageUrl){const image=create('img','ranking-entry-image');image.src=imageUrl;image.alt='Obrázok: '+(item.title||'Položka rebríčka');image.loading='lazy';top.append(image);}
+      const copy=create('div','ranking-entry-copy');
+      copy.append(create('h3','',item.title||'Bez názvu'));
+      const year=releaseYear(item);
+      const meta=[year?`Rok vydania: ${year}`:'',item.date?`Pridané: ${item.date}`:'',item.rating!=null?`★ ${item.rating}/10`:''].filter(Boolean).join(' · ');
+      if(meta)copy.append(create('div','ranking-entry-meta',meta));
+      if(item.comment)copy.append(create('p','ranking-entry-comment',item.comment));
+      top.append(copy);body.append(top);
+      if(item.reviewId){
+        const link=create('a','ranking-review-link','Prečítať celú recenziu →');
+        link.href='index.html?recenzia='+encodeURIComponent(String(item.reviewId));
+        body.append(link);
+      }
+      li.append(body);entries.append(li);
+    });
+  }
+  function openRanking(r){lastFocus=document.activeElement;activeRanking=r;rankingSort='date';document.getElementById('rankingSort').value='date';document.getElementById('modalTitle').textContent=r.title||'';document.getElementById('modalTag').textContent=categories[type(r.category)]||'🏆 Rebríček';document.getElementById('modalMeta').textContent=[r.date,`${(r.items||[]).length} položiek`].filter(Boolean).join(' · ');document.getElementById('modalIntro').textContent=r.intro||'';
+  const img=document.getElementById('rankingDetailImage');img.hidden=true;img.removeAttribute('src');
+  renderRankingEntries();
+  modal.hidden=false;document.body.style.overflow='hidden';modal.querySelector('.modal-close').focus()}
  function close(){modal.hidden=true;document.body.style.overflow='';if(lastFocus)lastFocus.focus()}
  document.querySelectorAll('[data-close-modal]').forEach(e=>e.addEventListener('click',close));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)close()});
+  document.getElementById('rankingSort').addEventListener('change',e=>{rankingSort=e.target.value;renderRankingEntries()});
  function render(){const q=normalize(search?.value);const shown=rankings.filter(r=>(category==='all'||type(r.category)===category)&&(!q||normalize([r.title,r.intro,...(r.items||[]).map(i=>i.title)].join(' ')).includes(q)));
  list.replaceChildren();status.textContent=`Zobrazené rebríčky: ${shown.length}`;if(!shown.length){list.append(create('p','empty-note',rankings.length?'Žiadny rebríček nezodpovedá výberu.':'Zatiaľ tu nie sú rebríčky. Priraď recenziu k rebríčku a nahraj aktualizovaný recenzie.json.'));return}
  shown.forEach(r=>{const card=create('button','ranking-card');card.type='button';const cover=create('div','ranking-image');cover.append(create('span','tag',categories[type(r.category)]||'🏆 Rebríček'));const info=create('div','ranking-info');info.append(create('h2','',r.title||'Bez názvu'),create('p','',r.summary||r.intro||''),create('small','',`${(r.items||[]).length} položiek · ${r.date||''}`));card.append(cover,info);card.addEventListener('click',()=>openRanking(r));list.append(card)})}
@@ -81,7 +132,7 @@
         if(fixed&&asCategory(r)!==fixed.category)return;
         if(!groups.has(key))groups.set(key,{key,title:fixed?.title||name,category:fixed?.category||asCategory(r),items:[],date:'',image:'',summary:''});
         const group=groups.get(key);
-        group.items.push({title:r.title||'Bez názvu',image:'',comment:r.summary||r.verdict||r.content||'',date:r.date||'',rating:r.rating,reviewId:r.id});
+        group.items.push({title:r.title||'Bez názvu',image:safeImage(r.image),comment:r.summary||r.verdict||r.content||'',date:r.date||'',year:r.year||r.releaseYear||null,rating:r.rating,reviewId:r.id});
         if(String(r.date||'')>group.date){group.date=r.date||'';group.image='';}
       });
     });
