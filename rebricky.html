@@ -65,7 +65,20 @@
  let rankings=[],category='all',lastFocus=null,activeRanking=null,rankingSort='date';
  const normalize=v=>String(v||'').toLocaleLowerCase('sk').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
  const type=v=>{const x=normalize(v);return x==='serial'||x==='serialy'||x==='serialy'?'serial':x==='hry'?'hra':x==='filmy'?'film':x};
- const safeImage=v=>{const x=String(v||'').trim();return /^(https:\/\/|images\/)[^<>"'`]*$/i.test(x)?x:''};
+ const safeImage=v=>{const x=String(v||'').trim();return /^(https:\/\/|\.\/)?images\/|^https:\/\/[^<>"'`]+$/i.test(x)?x:''};
+ const imageSources=v=>{
+   const original=safeImage(v);if(!original)return [];
+   const sources=[];
+   const githubMatch=original.match(/^https:\/\/github\.com\/dod-el\/perfectglitch\/blob\/main\/images\/(.+?)(?:\?[^#]*)?$/i);
+   if(githubMatch){
+     const file=githubMatch[1].split('/').map(part=>{try{return encodeURIComponent(decodeURIComponent(part))}catch{return part}}).join('/');
+     sources.push('./images/'+file,'https://raw.githubusercontent.com/dod-el/perfectglitch/main/images/'+file,original);
+   }else if(/^\.?\/?images\//i.test(original)){
+     const local=original.replace(/^\.?\/?/,'./');sources.push(local);
+     const file=local.replace(/^\.\/images\//,'');sources.push('https://raw.githubusercontent.com/dod-el/perfectglitch/main/images/'+file);
+   }else sources.push(original);
+   return [...new Set(sources)];
+ };
  const create=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
   const releaseYear=item=>{
     const explicit=Number(item.year||item.releaseYear||item.productionYear);
@@ -85,8 +98,14 @@
       const li=create('li');li.append(create('span','ranking-position',String(i+1)+'.'));
       const body=create('div','ranking-entry-content');
       const top=create('div','ranking-entry-top');
-      const imageUrl=safeImage(item.image);
-      if(imageUrl){const image=create('img','ranking-entry-image');image.src=imageUrl;image.alt='Obrázok: '+(item.title||'Položka rebríčka');image.loading='lazy';top.append(image);}
+      const sources=imageSources(item.image);
+      if(sources.length){
+        const image=create('img','ranking-entry-image');let sourceIndex=0;
+        image.alt='Obrázok: '+(item.title||'Položka rebríčka');
+        image.loading='eager';image.decoding='async';image.referrerPolicy='no-referrer';
+        image.addEventListener('error',()=>{sourceIndex++;if(sourceIndex<sources.length)image.src=sources[sourceIndex];else image.hidden=true;});
+        image.src=sources[sourceIndex];top.append(image);
+      }
       const copy=create('div','ranking-entry-copy');
       copy.append(create('h3','',item.title||'Bez názvu'));
       const year=releaseYear(item);
