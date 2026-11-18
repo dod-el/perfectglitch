@@ -76,6 +76,11 @@
 #readFullReview[hidden]{display:none}
 
 .hero:before{background:linear-gradient(0deg,rgba(3,9,14,.42),transparent 25%);pointer-events:none}
+
+/* Jemne vyšší banner bez tmavých okrajov; obrázok vyplní celú plochu. */
+.hero{min-height:460px;background-size:cover!important;background-position:center center!important;background-repeat:no-repeat!important}
+@media(max-width:760px){.hero{min-height:390px}}
+@media(max-width:420px){.hero{min-height:365px}}
 </style>
 </head>
 <body>
