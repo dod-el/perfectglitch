@@ -9,6 +9,7 @@
 :root{--bg:#050b10;--panel:#09131b;--panel2:#0c1922;--line:#20313c;--text:#f3f6f8;--muted:#aab9c4;--green:#61f47a;--blue:#40c9ff;--gold:#ffc83d;--radius:9px;--max:1440px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#142b38 0,transparent 42%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button,input{font:inherit}.wrap{width:min(var(--max),100% - 44px);margin:auto}.site-header{position:sticky;top:0;z-index:10;background:rgba(4,10,15,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:78px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:11px;min-width:270px}.brand-icon{font-size:38px;filter:drop-shadow(0 0 10px #63f47a30)}.brand-name{font-weight:950;letter-spacing:-1.4px;font-size:25px;line-height:1}.brand-sub{font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:800;margin-top:5px}.navlinks{display:flex;align-items:center;gap:25px;margin:auto;font-size:12px;font-weight:900;text-transform:uppercase}.navlinks a{padding:29px 0 25px;border-bottom:3px solid transparent;color:#e0e7eb}.navlinks a:hover,.navlinks a.active{color:var(--green);border-color:var(--green)}.nav-end{display:flex;align-items:center;gap:15px;color:var(--muted);font-size:12px}.nav-end .controller{font-size:27px}.mobile-menu{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 11px;border-radius:6px}
 .layout{display:grid;grid-template-columns:minmax(0,2.08fr) minmax(300px,.92fr);gap:13px;align-items:start}.maincol,.sidebar{min-width:0}.hero{position:relative;min-height:420px;overflow:hidden;border-bottom:1px solid var(--line);background:#07121a url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=85') center/cover}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,9,14,.55),transparent 34%);pointer-events:none}.hero-content{position:absolute;left:30px;bottom:24px;max-width:none;padding:0;z-index:2}.tag{display:inline-block;background:var(--green);color:#041008;padding:4px 10px;border-radius:4px;font-size:11px;font-weight:950;text-transform:uppercase;letter-spacing:.4px}.hero h1{font-size:clamp(30px,3.3vw,47px);line-height:1.04;letter-spacing:-1.6px;margin:15px 0 12px;font-weight:1000;text-transform:uppercase;text-shadow:0 2px 16px #000}.hero h1 span{display:block;color:#f5f7f8;font-size:.64em;letter-spacing:-.6px;margin-top:8px}.hero p{max-width:460px;color:#e1e7eb;font-size:14px;margin:0 0 18px}.btn{display:inline-flex;align-items:center;gap:10px;background:var(--green);color:#031008;border:0;border-radius:5px;padding:11px 15px;font-size:12px;font-weight:950;text-transform:uppercase;cursor:pointer;box-shadow:0 4px 18px #61f47a20}.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.hero-dots{position:absolute;bottom:32px;right:22px;display:flex;gap:9px;z-index:2}.hero-dots button{width:10px;height:10px;padding:0;border:0;background:#667b89;border-radius:50%;cursor:pointer;transition:background .2s,transform .2s}.hero-dots button[aria-current="true"]{background:var(--green);transform:scale(1.2)}.hero-dots button:focus-visible{outline:2px solid white;outline-offset:4px}.hero-content{transition:opacity .22s ease,transform .22s ease}.hero-content.is-changing{opacity:0;transform:translateY(5px)}
+.modal-summary{color:#e3edf2!important;background:#10252e;border-left:3px solid var(--green);padding:13px 16px;border-radius:0 6px 6px 0;font-weight:700;line-height:1.65;margin:14px 0 20px}
 .hero[aria-busy="true"] .hero-content{opacity:.7}
 @media(prefers-reduced-motion:reduce){.hero-content{transition:none}html{scroll-behavior:auto}}
 #popularReviewsList .review-card{cursor:pointer} #popularReviewsList .review-card:focus-visible{outline:2px solid var(--green);outline-offset:3px}
@@ -89,7 +90,7 @@
 <div class="wrap layout" id="domov">
   <main class="maincol">
     <section class="hero" id="featuredRotator" aria-label="Odporúčaný obsah" aria-roledescription="carousel">
-      <div class="hero-content" id="heroContent" aria-live="polite"><a class="btn" id="heroButton" href="clanky.html">Čítať celú recenziu <span>→</span></a></div>
+      <div class="hero-content" id="heroContent" aria-live="polite"><a class="btn" id="heroButton" href="clanky.html">Pozrieť celú recenziu <span>→</span></a></div>
       <div class="hero-dots" id="heroDots" aria-label="Vybrať odporúčaný obsah"></div>
     </section>
     <section class="section" id="filmy">
@@ -111,7 +112,7 @@
     <section class="sidebox"><h2 class="side-title">Najväčšie sklamania <span>💀</span></h2><ol class="rank-list" id="topSklamania"></ol><button class="rank-more" type="button" data-rank-toggle="topSklamania" aria-expanded="false">Pozrieť všetky →</button></section>
   </aside>
 </div>
-<div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle">Článok</h2><div class="modal-meta" id="modalMeta"></div><p id="modalIntro" class="modal-review-content"></p><div class="modal-joke" id="modalJoke"></div><section class="related-reviews" id="relatedReviews" hidden><h3>🍿 Podobné recenzie</h3><div class="related-list" id="relatedList"></div></section><div class="review-actions"><button type="button" id="readFullReview" hidden>Prečítať celú recenziu →</button><button type="button" id="copyReviewLink">🔗 Kopírovať odkaz na recenziu</button></div><p class="modal-disclaimer">Recenzia predstavuje subjektívny názor autora.</p></article></div>
+<div class="modal" id="articleModal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><article class="modal-card"><button class="modal-close" type="button" aria-label="Zavrieť" data-close-modal>×</button><span class="tag" id="modalTag">RECENZIA</span><h2 id="modalTitle">Článok</h2><div class="modal-meta" id="modalMeta"></div><p id="modalSummary" class="modal-summary" hidden></p><p id="modalIntro" class="modal-review-content"></p><div class="modal-joke" id="modalJoke"></div><section class="related-reviews" id="relatedReviews" hidden><h3>🍿 Podobné recenzie</h3><div class="related-list" id="relatedList"></div></section><div class="review-actions"><button type="button" id="readFullReview" hidden>Prečítať celú recenziu →</button><button type="button" id="copyReviewLink">🔗 Kopírovať odkaz na recenziu</button></div><p class="modal-disclaimer">Recenzia predstavuje subjektívny názor autora.</p></article></div>
 <footer class="footer" id="clanky"><div class="wrap"><div class="footer-inner"><a class="brand" href="#domov"><span class="brand-icon">🍿</span><div><div class="brand-name">Perfect Glitch</div><div class="brand-sub">FILMY · SERIÁLY · HRY · HUMOR</div></div></a><nav class="footer-links"><a href="index.html">Domov</a><a href="filmy.html">Filmy</a><a href="serialy.html">Seriály</a><a href="hry.html">Hry</a><a href="rebricky.html">Rebríčky</a><a href="clanky.html">Články</a><a href="o-mne.html">O mne</a></nav><div class="social" aria-label="Sociálne siete"><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="Instagram">◎</a><a href="#" aria-label="Facebook">f</a></div></div><div class="copyright">© 2026 Perfect Glitch · Filmy, hry, humor. To je život. <span style="float:right">Ukážkové recenzie a rebríčky zatiaľ slúžia na prezentáciu dizajnu.</span></div></div></footer>
 
 
@@ -123,6 +124,7 @@
   const tagEl = document.getElementById('modalTag');
   const metaEl = document.getElementById('modalMeta');
   const introEl = document.getElementById('modalIntro');
+  const summaryEl = document.getElementById('modalSummary');
   const jokeEl = document.getElementById('modalJoke');
   const searchPanel = document.getElementById('searchPanel');
   const searchInput = document.getElementById('siteSearch');
@@ -147,6 +149,8 @@
     titleEl.textContent = title;
     tagEl.textContent = type || 'ČLÁNOK';
     metaEl.textContent = (type || 'ČLÁNOK') + (rating ? ' · HODNOTENIE ' + rating : '');
+    summaryEl.hidden = true;
+    summaryEl.textContent = '';
     introEl.textContent = intro || 'Text recenzie zatiaľ nie je doplnený.';
     jokeEl.textContent = 'Hodnotenie autora: ' + (rating || 'bez hodnotenia') + '/10';
     relatedBox.hidden = true; document.getElementById('copyReviewLink').hidden = true;
@@ -218,6 +222,8 @@
     }
     function openReview(r) {
       openArticle(r.title, String(r.type || 'RECENZIA').toUpperCase(), r.rating, r.content || r.summary);
+      summaryEl.textContent = r.summary || '';
+      summaryEl.hidden = !r.summary || r.summary.trim() === (r.content || '').trim();
       fillReviewExtras(r);
       const url = new URL(location.href);
       url.searchParams.set('recenzia', String(r.id || r.title));
@@ -422,16 +428,14 @@ document.getElementById('searchToggle')?.addEventListener('click', () => {
       const latest = candidates[0];
       return latest ? {
         tag:category.tag, title:latest.title || 'Nová recenzia', subtitle:latest.subtitle || '',
-        description:latest.summary || '', button:'Čítať celú recenziu', href:'#recenzia',
+        description:latest.summary || '', button:'Pozrieť celú recenziu', href:'#recenzia',
         image:latest.image || '', type:category.type, rating:latest.rating || '',
         article:latest.content || latest.summary || '', review:latest, reviewId:latest.id || latest.title
       } : null;
     }).filter(Boolean);
     activeHeroSlide = 0;
     if (!heroSlides.length) {
-      stopHeroTimer(); heroTag.textContent = 'Recenzie';
-      heroTitle.textContent = 'Zatiaľ nie sú dostupné recenzie';
-      heroDescription.textContent = 'Nové recenzie sa tu zobrazia automaticky.';
+      stopHeroTimer();
       heroButton.hidden = true; heroDots.innerHTML = ''; return;
     }
     heroButton.hidden = false;
@@ -448,10 +452,6 @@ document.getElementById('searchToggle')?.addEventListener('click', () => {
     heroContent.classList.add('is-changing');
     clearTimeout(heroChangeTimer);
     heroChangeTimer=window.setTimeout(()=>{
-      heroTag.textContent=slide.tag;
-      heroTitle.textContent=slide.title;
-      const sub=document.createElement('span'); sub.textContent=slide.subtitle; heroTitle.appendChild(sub);
-      heroDescription.textContent=slide.description;
       heroButton.innerHTML=`${slide.button} <span>→</span>`; heroButton.href=slide.href;
       hero.style.backgroundImage=`url("${slide.image}")`;
       heroContent.classList.remove('is-changing'); renderHeroDots();
@@ -473,7 +473,7 @@ document.getElementById('searchToggle')?.addEventListener('click', () => {
       if(matched) openReview(matched); else openArticle(slide.title,slide.type,slide.rating,slide.article);
     }
   });
-  heroTag.textContent = 'Načítavam recenzie'; heroTitle.textContent = 'Filmy · Hry · Seriály'; heroDescription.textContent = 'Pripravujeme najnovšie recenzie…'; heroButton.hidden = true;
+  heroButton.hidden = true;
 })();
 </script>
 
